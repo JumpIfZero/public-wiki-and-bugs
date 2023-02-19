@@ -1,5 +1,5 @@
 ----
-title: About KittyKeys
+title: "About KittyKeys"
 layout: default
 ----
 
