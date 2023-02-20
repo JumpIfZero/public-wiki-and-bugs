@@ -14,7 +14,7 @@
 title: JumpIfZero Plugin Documentation
 description: Official docs for KittyKeys and other plugins by JZ.
 baseurl: "/public-wiki-and-bugs" # the subpath of your site, e.g. /blog
-url: "jumpifzero.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "jumpifzero.github.io/public-wiki-and-bugs" # the base hostname & protocol for your site, e.g. http://example.com
 repository: JumpIfZero/public-wiki-and-bugs # for github-metadata
 
 permalink: pretty
@@ -164,6 +164,7 @@ callouts:
 plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
+  - jekyll-default-layout
 
 kramdown:
   syntax_highlighter_opts:
