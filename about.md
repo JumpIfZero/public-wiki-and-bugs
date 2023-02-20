@@ -1,10 +1,9 @@
-----
-layout: default
+---
 title: What is Kittykeys?
-nav_order: 1
+nav_order: 2
 description: "About the Kittykeys plugin."
 permalink: /about
-----
+---
 
 # So what is Kittykeys anyway?
 
