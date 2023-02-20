@@ -5,7 +5,7 @@ description: "About the Kittykeys plugin."
 permalink: /about
 ---
 
-# So what is Kittykeys anyway?
+# What is Kittykeys?
 
 Kittykeys is a programmable, fully customizable plugin that implements event-driven architecture. A producer creates an event that is caused by change or update, that triggers routing which finally leads to consumer to take action. This means that you can run set of commands when you press a hotkey or automate it to happen when something happens in-game.
 
@@ -34,12 +34,16 @@ The general event flow is: Producer → routing → consumer
 
 ## Examples
 
-Enable protect from melee by pressing key "A":  
+Enable protect from melee by pressing key <kbd>A</kbd>:  
 ```
-Key press → key matches a bound hotkey → run script (enable protect from melee)
+Key press 
+  → key matches a bound hotkey 
+    → run script (enable protect from melee)
 ```
 
 Drop logs when inventory gets full:  
 ```
-Inventory full → matching script with this trigger was found → run script (drop all logs from inventory)  
+Inventory full 
+  → matching script with this trigger was found 
+    → run script (drop all logs from inventory)  
 ````
