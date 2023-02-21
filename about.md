@@ -1,5 +1,5 @@
 ---
-title: What is Kittykeys?
+title: About Kittykeys
 nav_order: 2
 description: "About the Kittykeys plugin."
 permalink: /about
