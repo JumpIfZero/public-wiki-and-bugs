@@ -1,4 +1,16 @@
-Triggers are the heart of automatic scripts, where you want something to happen automatically after something happens (event) in-game.<br>Kittykeys version 1.0.3 supports following triggers:
+---
+title: Triggers
+description: ""
+permalink: /triggers
+---
+
+# Triggers in Kittykeys
+
+Triggers are the heart of automatic scripts. Using trighgers, a series of commands can run automatically after some event happens in-game.
+
+Kittykeys supports the following triggers as documented below. If you have any questions, please join the [JumpIfZero Plugins Discord server](https://discord.gg/j6754fvqyn), and we'll be happy to help! :cat:
+
+----
 
 ## ANIMATION_SELF
 ANIMATION_SELF animationID - When animation starts on your own player, this trigger is hit. 

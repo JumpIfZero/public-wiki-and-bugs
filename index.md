@@ -1,9 +1,5 @@
 ---
-title: Home
-nav_order: 1
-description: ""
-permalink: /
----
+
 
 This documentation explains how to use the Kittykeys plugin by JZ#4216.
 

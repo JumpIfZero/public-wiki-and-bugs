@@ -1,8 +1,14 @@
-# Commands in KittyKeys 1.7.2
+---
+title: Commands
+description: ""
+permalink: /commands
+---
+
+# Commands in KittyKeys
 
 Commands are the heart of all scripts, they are used as instructions that tell a script what to do next.
 
-Kittykeys version 1.7.2 supports the following commands as documented below. If you have any questions, please join the [JumpIfZero Plugins Discord server](https://discord.gg/j6754fvqyn), and we'll be happy to help! :cat:
+Kittykeys supports the following commands as documented below. If you have any questions, please join the [JumpIfZero Plugins Discord server](https://discord.gg/j6754fvqyn), and we'll be happy to help! :cat:
 
 ----
 
