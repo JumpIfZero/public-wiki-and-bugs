@@ -24,7 +24,7 @@ Kittykeys supports the following commands as documented below. If you have any q
 ## CONSUME
 _Clicks on the first occurrence of the inventory item(s)_
 
-### Syntax: 
+#### Syntax: 
 ```jsonc
 CONSUME Item_Name_1|Item_ID_1[,Item_Name_2|Item_ID_2,...] [Identifier]
 ```
@@ -36,7 +36,7 @@ CONSUME Item_Name_1|Item_ID_1[,Item_Name_2|Item_ID_2,...] [Identifier]
 
 TODO: How to locate Identifier
 
-### Examples: 
+#### Examples: 
 ```jsonc
 // Consume (click) the first occurrence of anything with "cake" somewhere in the name
 CONSUME *cake*
@@ -46,7 +46,7 @@ CONSUME Dwarven_Rock_cake 4
 CONSUME *Rock_cake 4
 ```
 
-### Notes: 
+#### Notes: 
 - Generally, you should prefer items' integer IDs, as they are more precise. However, in certain situations, a wildcard is required. When consuming potions or multiple food items, use the names:
 
 ```jsonc
@@ -58,7 +58,7 @@ CONSUME Shark,Saradomin_brew*,*karambwan*
 CONSUME 6685
 ```
 
-### Demo:
+#### Demo:
 ![](https://i.imgur.com/1XR1b7s.gif)
 
 ----
@@ -66,7 +66,7 @@ CONSUME 6685
 ## CONSUME_ALL
 _Clicks once on each occurrence of the inventory item(s)._
 
-### Syntax: 
+#### Syntax: 
 ```jsonc 
 CONSUME_ALL Item_Name_1|Item_ID_1[,Item_Name_2|Item_ID_2,...] [Identifier]
 ```
@@ -78,15 +78,15 @@ CONSUME_ALL Item_Name_1|Item_ID_1[,Item_Name_2|Item_ID_2,...] [Identifier]
 
 TODO: How to locate Identifier
 
-### Examples: 
+#### Examples: 
 ```jsonc 
 // Drop all logs in the inventory. 7 is the Identifier for "drop".
 CONSUME_ALL *logs* 7
 ```
-### Notes: 
+#### Notes: 
 - Generally, you should prefer items' integer IDs, as they are more precise. However, in certain situations, using the item's name with a wildcard is required.
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/ISznuS5.gif)
 
 ----
@@ -94,14 +94,14 @@ CONSUME_ALL *logs* 7
 ## EMOTE
 _Performs the emote with the specified name._
 
-### Syntax:
+#### Syntax:
 ```jsonc
 EMOTE Emote_Name
 ```
 
 - **`Emote_Name`** : The name of an emote to perform. When specifying an emote, use underscores instead of spaces, and do not use quotes.
 
-### Examples:
+#### Examples:
 ```jsonc
 // Dance like no one's watching
 EMOTE Dance
@@ -109,7 +109,7 @@ EMOTE Dance
 EMOTE Skill_Cape
 ```
 
-### Notes:
+#### Notes:
 - Only specify one emote per command.
 ```jsonc
 // BAD: One command won't perform multiple emotes
@@ -119,7 +119,7 @@ EMOTE Dance
 EMOTE Bow
 ```
 
-### Demo:  
+#### Demo:  
 ![](https://i.imgur.com/3E6hRi4.gif)
 
 ----
@@ -127,7 +127,7 @@ EMOTE Bow
 ## ITEM_USE
 _Combines the first occurrence of inventory item 1 with the first occurrence of inventory item._
 
-### Syntax:
+#### Syntax:
 ```jsonc
 ITEM_USE Item_Name_1|Item_ID_1 Item_Name_2|Item_ID_2
 ```
@@ -135,7 +135,7 @@ ITEM_USE Item_Name_1|Item_ID_1 Item_Name_2|Item_ID_2
 - **`Item_Name`** : The string name of an item. When specifying items by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards
 - **`Item_ID`** : The integer ID of an item.
 
-### Examples:
+#### Examples:
 ```jsonc
 // Attach a stack of feathers to a stack of dart tips (any type)
 ITEM_USE Feather *Dart_tip*
@@ -144,10 +144,10 @@ ITEM_USE Feather *Dart_tip*
 ITEM_USE Feather 823
 ```
 
-### Notes: 
+#### Notes: 
 - Generally, you should prefer items' integer IDs, as they are more precise. However, in certain situations, using the item's name with a wildcard is required.
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/7stedcZ.gif)
 
 ----
@@ -155,7 +155,7 @@ ITEM_USE Feather 823
 ## ITEM_NPC
 _Uses the first occurrence of an inventory item on your NPC target._
 
-### Syntax:
+#### Syntax:
 ```jsonc
 ITEM_NPC Item_Name|Item_ID
 ```
@@ -166,10 +166,10 @@ ITEM_NPC Item_Name|Item_ID
 ITEM_NPC 1778
 ```
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/hbRJSum.gif)
 
-### Notes: 
+#### Notes: 
 - If the player does not have a target, this command will do nothing. See **[TARGET_SET](#target_set)** for more information.
 - Generally, you should prefer items' integer IDs, as they are more precise. However, in certain situations, using the item's name with a wildcard is required.
 
@@ -178,7 +178,7 @@ ITEM_NPC 1778
 ## ITEM_OBJECT
 _Uses an inventory item on the first nearby occurrence of a game object._
 
-### Syntax:
+#### Syntax:
 ```jsonc
 ITEM_OBJECT Item_Name|Item_ID Game_Object_ID
 ```
@@ -186,13 +186,13 @@ ITEM_OBJECT Item_Name|Item_ID Game_Object_ID
 - **`Item_ID`** : The integer ID of an item. 
 - **`Game_Object_ID`** : The integer ID of a game object. Strings are not accepted.
 
-### Examples: 
+#### Examples: 
 ```jsonc
 // Use Cannonball (item 1778) on a deployed Dwarf multicannon (object 26711) to refill it
 ITEM_OBJECT 1778 26711
 ```
 
-### Notes: 
+#### Notes: 
 - Because `Game_Object_ID` requires an integer ID, it is recommended to use the item's integer ID for this command as well. 
 ```jsonc
 // GOOD: Both parameters are integer IDs (recommended)
@@ -205,7 +205,7 @@ ITEM_OBJECT Cannonball Dwarf_multicannon
 ITEM_OBJECT 1778 Dwarf_multicannon
 ```
 
-### Demo:
+#### Demo:
 
 ![](https://i.imgur.com/HOo155S.gif)
 
@@ -214,12 +214,12 @@ ITEM_OBJECT 1778 Dwarf_multicannon
 ## MOVE
 _Moves the player in a straight line, relative to the player's current position._
 
-### Syntax:
+#### Syntax:
 ```jsonc
 MOVE X Y
 ```
 
-### Examples:
+#### Examples:
 ```jsonc
 // Move one tile up and one tile to the right
 MOVE -1 -1
@@ -231,14 +231,14 @@ MOVE 6 1
 MOVE 0 -9
 ```
 
-### Notes:
+#### Notes:
 - **`MOVE`** is best used over short distances, such as to step away from an area-of-effect (AOE) attack. For longer distances, consider using the **[SCENE_WALK](#SCENE_WALK)** command.
 - The player's current position is treated as (0,0) on an invisible grid of world tiles. All movements are specified as _n_ tiles away from wherever the player is already standing on the X and Y axes. 
   - Positive X is Right. Negative X is Left.
   - Negative Y is Down. Positive Y is Up.
   - An X or Y value of 0 means "do not move" (left/right or up/down)
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/tl9EtDV.gif)
 
 ----
@@ -246,7 +246,7 @@ MOVE 0 -9
 ## QUICK_PRAYER
 _Activates, deactivates, or toggles the player's previously defined quick prayers._
 
-### Syntax:
+#### Syntax:
 ```jsonc
 QUICK_PRAYER [0|1]
 ```
@@ -264,10 +264,10 @@ QUICK_PRAYER 1
 // Toggle (reverse) the current state of quick prayers
 QUICK_PRAYER
 ```
-### Notes:
+#### Notes:
 - Requires quick prayers to be previously set. If there are no quick prayers configured, this command will do nothing.
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/oOFjtej.gif)
 
 ----
@@ -275,7 +275,7 @@ QUICK_PRAYER
 ## PRAYER
 _Activates, deactivates, or toggles a prayer by name._
 
-### Syntax:
+#### Syntax:
 ```jsonc
 PRAYER_NAME [0|1]
 ```
@@ -295,7 +295,7 @@ PROTECT_FROM_MELEE 1
 PROTECT_FROM_MELEE
 ```
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/tBxI1AB.gif)
 
 ----
@@ -303,7 +303,7 @@ PROTECT_FROM_MELEE
 ## SLEEP
 _Pauses the script for the given number of milliseconds, or for a random amount of time within the given range._
 
-### Syntax:
+#### Syntax:
 ```jsonc
 SLEEP [Milliseconds|minMS] [maxMS]
 ```
@@ -311,7 +311,7 @@ SLEEP [Milliseconds|minMS] [maxMS]
 - **`minMS`** : When two values are supplied to the sleep command, this is the minimum number of milliseconds that the script will pause before continuing.
 - **`maxMS`** : When two values are supplied to the sleep command, this is the maximum number of milliseconds that the script will pause before continuing.
 
-### Examples:
+#### Examples:
 ```jsonc
 // Wait exactly 750 milliseconds every time
 SLEEP 750
@@ -319,7 +319,7 @@ SLEEP 750
 SLEEP 500 1500
 ```
 
-### Notes:
+#### Notes:
 - 1000 ms == 1 second. 500ms == 0.5 seconds.
 - The average game tick is about 0.6 seconds (600ms), but this is not truly constant. 
   Consider using the **[TICK](#tick)** command instead if your actions depend on accurate game ticks.
@@ -329,23 +329,23 @@ SLEEP 500 1500
 ## SPECIAL
 _Activates the special attack ability of the currently equipped weapon, if available._
 
-### Syntax: 
+#### Syntax: 
 ```jsonc
 SPECIAL
 ```
 - This command takes no arguments.
 
-### Examples:
+#### Examples:
 ```jsonc
 // Trigger the special attack ability
 SPECIAL
 ```
 
-### Notes:
+#### Notes:
 - If the player's equipped weapon has no special attack ability, this command will do nothing.
 
 <!-- TODO: Do we need a demo here? 
-### Demo:
+#### Demo:
 ![](https://example.com/SPECIAL_demo.gif)
 -->
 
@@ -354,7 +354,7 @@ SPECIAL
 ## SPELL
 _Casts a magic spell on your current target, on an item or object by name, or enables left-click casting._
 
-### Syntax:
+#### Syntax:
 ```jsonc
 SPELL_NAME 1|Item_Name|Item_ID|Game_Object_Name|Game_Object_ID
 ```
@@ -364,7 +364,7 @@ SPELL_NAME 1|Item_Name|Item_ID|Game_Object_Name|Game_Object_ID
 - **`Game_Object_Name`** : The string name of a game object to cast the spell upon. When specifying items by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards
 - **`Game_Object_ID`** : The integer ID of a game object to cast the spell upon.
 
-### Examples: 
+#### Examples: 
 ```jsonc
 // Enable left-click casting of Ice Barrage
 ICE_BARRAGE 1
@@ -374,10 +374,10 @@ HIGH_LEVEL_ALCHEMY *arrows*
 FIRE_SURGE
 ```
 
-### Notes:
+#### Notes:
 - If the player does not have a target, this command will do nothing. See **[TARGET_SET](#target_set)** for more information.
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/NRkpH1J.gif)
 _Left-click casting Fire Strike._
 
@@ -392,16 +392,16 @@ _High Level Alchemy._
 ## TARGET
 _Clicks or interacts with the player's current target._ 
 
-### Syntax:
+#### Syntax:
 ```jsonc
 TARGET [MenuAction]
 ``` 
 - **`MenuAction`** _(Optional)_ : 
 
-### Notes:
+#### Notes:
 - If the player does not have a target, this command will do nothing. See **[TARGET_SET](#target_set)** for more information.
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/PEXvs0S.gif)
 
 ----
@@ -414,7 +414,7 @@ TARGET_SET - Used with NPC_SPAWN event, sets your target to the triggered NPC
 ## TARGET_UNSET
 UNSET_TARGET - Unsets your current target
 
-### Notes:
+#### Notes:
 - If the player does not have a target, this command will do nothing. See **[TARGET_SET](#target_set)** for more information.
 
 ----
@@ -422,7 +422,7 @@ UNSET_TARGET - Unsets your current target
 ## WALK_TARGET
 WALK_TARGET - Walks under your target's current location coordinates
 
-### Notes: 
+#### Notes: 
 - If the player does not have a target, this command will do nothing. See **[TARGET_SET](#target_set)** for more information.
 
 TODO: Demo?
@@ -432,7 +432,7 @@ TODO: Demo?
 ## UNEQUIP
 UNEQUIP Item_Name_1|Item_ID_1 - Unequips gear from equipment tab. Example `UNEQUIP *mystic*`, `UNEQUIP *ring*`
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/4Xqs5Zy.gif)
 
 ----
@@ -440,7 +440,7 @@ UNEQUIP Item_Name_1|Item_ID_1 - Unequips gear from equipment tab. Example `UNEQU
 ## WIELD
 WIELD Item_Name_1|Item_ID_1,Item_Name_2|Item_ID_2 - Wields items from your inventory. Example `WIELD *mystic*`
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/PMg4np5.gif)
 
 ----
@@ -448,7 +448,7 @@ WIELD Item_Name_1|Item_ID_1,Item_Name_2|Item_ID_2 - Wields items from your inven
 ## WITHDRAW
 WITHDRAW Item_Name_1|Item_ID_1 AMOUNT - Withdraws items from your bank. Example `WITHDRAW water_rune 7`
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/MJftNNl.gif)
 
 ----
@@ -456,7 +456,7 @@ WITHDRAW Item_Name_1|Item_ID_1 AMOUNT - Withdraws items from your bank. Example 
 ## BANK_WIELD
 BANK_WIELD Item_Name_1|Item_ID_1,Item_Name_2|Item_ID_2 - Wields items from your bank inventory. Example: `BANK_WIELD 4089,4113,4105,4097`
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/dWYJiP8.gif)
 
 
@@ -465,7 +465,7 @@ BANK_WIELD Item_Name_1|Item_ID_1,Item_Name_2|Item_ID_2 - Wields items from your 
 ## PICKUP
 PICKUP [1] - Picks item up, only supported after item spawn trigger. Use 1 to telegrab instead of picking up by walking.
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/UalPwFe.gif)
 
 ----
@@ -473,7 +473,7 @@ PICKUP [1] - Picks item up, only supported after item spawn trigger. Use 1 to te
 ## GAME_OBJECT
 GAME_OBJECT GameObjectName/Game_Object_ID [MenuAction] - Clicks on first game object found. Optional menuaction can be used if the wanted action is not the top (usually left click one). Example `GAME_OBJECT 12308`
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/8G9ThTe.gif)
 
 
@@ -503,5 +503,5 @@ This allows you to see what the parameters for your click were. Typing the same 
 
 Example: "I want to toggle run, but there's no such command". Click on run and then see which numbers the plugin prints to your chat. Type these as custom command. 
 
-### Demo: 
+#### Demo: 
 ![](https://i.imgur.com/YbIhHM9.gif)
