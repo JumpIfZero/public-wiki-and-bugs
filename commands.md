@@ -5,6 +5,15 @@ permalink: /commands
 ---
 
 # Commands in KittyKeys
+{: .no_toc }
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+----
 
 Commands are the heart of all scripts, they are used as instructions that tell a script what to do next.
 

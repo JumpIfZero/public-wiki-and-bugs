@@ -5,6 +5,15 @@ permalink: /triggers
 ---
 
 # Triggers in Kittykeys
+{: .no_toc }
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+----
 
 Triggers are the heart of automatic scripts. Using trighgers, a series of commands can run automatically after some event happens in-game.
 
