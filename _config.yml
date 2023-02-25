@@ -1,6 +1,6 @@
 
 title: JumpIfZero Plugin Documentation
-description: Official docs for KittyKeys and other plugins by JZ.
+description: Official docs for Kittykeys and other plugins by JZ.
 baseurl: "/public-wiki-and-bugs" # the subpath of your site, e.g. /blog
 url: "https://jumpifzero.github.io/public-wiki-and-bugs" # the base hostname & protocol for your site, e.g. http://example.com
 repository: JumpIfZero/public-wiki-and-bugs # for github-metadata

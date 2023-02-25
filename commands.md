@@ -4,7 +4,7 @@ description: ""
 permalink: /commands
 ---
 
-# Commands in KittyKeys
+# Commands in Kittykeys
 {: .no_toc }
 
 ## Table of Contents
@@ -495,9 +495,9 @@ _Anything you can do, Kitties do better._
 
 TODO: Separate page for a better CUSTOM walkthrough.
 
-KittyKeys lets you perform ANY action, even if that action is not natively supported:
+Kittykeys lets you perform ANY action, even if that action is not natively supported:
 
-Go to KittyKeys -> Settings -> Debug -> Enable **Log clicks to chat**.
+Go to Kittykeys -> Settings -> Debug -> Enable **Log clicks to chat**.
 
 This allows you to see what the parameters for your click were. Typing the same numbers in CUSTOM action will repeat this. IMPORTANT! Do note that this will not work for things, where the identifier or parameters will change, such as clicking on game objects, inventory items in different slots etc. Those have their own command which you should use instead of this.
 
