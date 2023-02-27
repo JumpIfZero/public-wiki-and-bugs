@@ -4,6 +4,9 @@ description: ""
 permalink: /commands
 ---
 
+{: .warning }
+This wiki is not complete (yet). Please refer to the Kittykeys editor's **Help** tab, or to the JZ plugin discord, for the most up-to-date information.
+
 # Commands in Kittykeys
 {: .no_toc }
 
@@ -313,7 +316,7 @@ QUICK_PRAYER [0|1]
 - If no parameter is specified, this command will toggle the player's quick prayers to the opposite state.
 
 ----
-## Examples: 
+### Examples: 
 ```jsonc
 // Always disable quick prayers
 QUICK_PRAYER 0
@@ -349,7 +352,7 @@ PRAYER_NAME [0|1]
 - If no second parameter is specified, this command will toggle the named prayer to the opposite state.
 
 ----
-## Examples: 
+### Examples: 
 ```jsonc
 // Always disable Protect from Melee
 PROTECT_FROM_MELEE 0
