@@ -4,6 +4,9 @@ description: ""
 permalink: /triggers
 ---
 
+{: .warning }
+This wiki is not complete (yet). Please refer to the Kittykeys editor's **Help** tab, or to the JZ plugin discord, for the most up-to-date information.
+
 # Triggers in Kittykeys
 {: .no_toc }
 
