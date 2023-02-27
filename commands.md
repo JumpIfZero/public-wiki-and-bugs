@@ -317,6 +317,7 @@ QUICK_PRAYER [0|1]
 
 ----
 ### Examples: 
+{: .no_toc }
 ```jsonc
 // Always disable quick prayers
 QUICK_PRAYER 0
@@ -346,13 +347,14 @@ _Activates, deactivates, or toggles a prayer by name._
 ```jsonc
 PRAYER_NAME [0|1]
 ```
-- **`PRAYER_NAME`** : The string name of a prayer. When specifying a prayer by name, use UPPERCASE with underscores instead of spaces, and do not use quotes.
+- **`PRAYER _NAME`** : The string name of a prayer. When specifying a prayer by name, use UPPERCASE with underscores instead of spaces, and do not use quotes.
 - **`0`** _(Optional)_ : Force the named prayer OFF, regardless of its current state.
 - **`1`** _(Optional)_ : Force the named prayer ON, regardless of its current state.
 - If no second parameter is specified, this command will toggle the named prayer to the opposite state.
 
 ----
-### Examples: 
+### Examples:
+{: .no_toc } 
 ```jsonc
 // Always disable Protect from Melee
 PROTECT_FROM_MELEE 0
