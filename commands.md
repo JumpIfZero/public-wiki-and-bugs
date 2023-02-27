@@ -89,7 +89,7 @@ CONSUME_ALL Item_Name_1|Item_ID_1[,Item_Name_2|Item_ID_2,...] [Identifier]
 - **Multiple Items** _(Optional)_ : To specify multiple items that should all be consumed within a single game tick, separate each with a comma and no space. 
 - **`Identifier`** _(Optional)_ : The integer value _Identifier_ can be used with a single item if the desired action is not the default action for that item (i.e., if it is not the left-click action). 
 
-TODO: How to locate Identifier
+TODO: How to locate the Identifier
 
 ### Examples:
 {: .no_toc }
