@@ -124,6 +124,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
   - jekyll-default-layout
+  - jekyll-relative-links
 
 kramdown:
   syntax_highlighter_opts:
