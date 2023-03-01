@@ -1,0 +1,1549 @@
+{"0": {
+    "doc": "About Kittykeys",
+    "title": "What is Kittykeys?",
+    "content": "Kittykeys is a programmable, fully customizable plugin that implements event-driven architecture. A producer creates an event that is caused by change or update, that triggers routing which finally leads to consumer to take action. This means that you can run set of commands when you press a hotkey or automate it to happen when something happens in-game. ",
+    "url": "/public-wiki-and-bugs/about#what-is-kittykeys",
+    
+    "relUrl": "/about#what-is-kittykeys"
+  },"1": {
+    "doc": "About Kittykeys",
+    "title": "Features",
+    "content": ". | Configurable click locations (random/constant) | Configurable delays (random/instant) | Option to turn mouse clicks off | Option to allow multiple scripts to run at same time | Option to queue any pending scripts that may try to run while another is already running | Option to force stop all running scripts | Option to block hotkeys from chat | Option to disable timeouts when using trigger (event) inside command | Tab autocompletion for command and trigger names. | . Miscellaneous features: . | Permanent special attack bar | . ",
+    "url": "/public-wiki-and-bugs/about#features",
+    
+    "relUrl": "/about#features"
+  },"2": {
+    "doc": "About Kittykeys",
+    "title": "How Kittykeys Works",
+    "content": "The general event flow is: Producer → routing → consumer . ",
+    "url": "/public-wiki-and-bugs/about#how-kittykeys-works",
+    
+    "relUrl": "/about#how-kittykeys-works"
+  },"3": {
+    "doc": "About Kittykeys",
+    "title": "Examples",
+    "content": "Enable protect from melee by pressing key A: . Key press → key matches a bound hotkey → run script (enable protect from melee) . Drop logs when inventory gets full: . Inventory full → matching script with this trigger was found → run script (drop all logs from inventory) . ",
+    "url": "/public-wiki-and-bugs/about#examples",
+    
+    "relUrl": "/about#examples"
+  },"4": {
+    "doc": "About Kittykeys",
+    "title": "About Kittykeys",
+    "content": " ",
+    "url": "/public-wiki-and-bugs/about",
+    
+    "relUrl": "/about"
+  },"5": {
+    "doc": "ANIMATION_ANY",
+    "title": "ANIMATION_ANY",
+    "content": "When any nearby player or NPC performs the specified animation, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/animation_any/",
+    
+    "relUrl": "/triggers/animation_any/"
+  },"6": {
+    "doc": "ANIMATION_ANY",
+    "title": "Syntax",
+    "content": "ANIMATION_ANY Animation_ID . | Animation_ID : The integer ID of an animation. | . ",
+    "url": "/public-wiki-and-bugs/triggers/animation_any/#syntax",
+    
+    "relUrl": "/triggers/animation_any/#syntax"
+  },"7": {
+    "doc": "ANIMATION_ANY",
+    "title": "Examples",
+    "content": "// Pray magic against Jad in the inferno Jad challenge ANIMATION_ANY 7592 // Commands Sleep 600 700 PROTECT_FROM_MAGIC 1 . ",
+    "url": "/public-wiki-and-bugs/triggers/animation_any/#examples",
+    
+    "relUrl": "/triggers/animation_any/#examples"
+  },"8": {
+    "doc": "ANIMATION_ANY",
+    "title": "Notes",
+    "content": ". | Useful for auto prayers. | . ",
+    "url": "/public-wiki-and-bugs/triggers/animation_any/#notes",
+    
+    "relUrl": "/triggers/animation_any/#notes"
+  },"9": {
+    "doc": "ANIMATION_ANY",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/triggers/animation_any/#demos",
+    
+    "relUrl": "/triggers/animation_any/#demos"
+  },"10": {
+    "doc": "ANIMATION_SELF",
+    "title": "ANIMATION_SELF",
+    "content": "When the specified animation starts on the player, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/animation_self/",
+    
+    "relUrl": "/triggers/animation_self/"
+  },"11": {
+    "doc": "ANIMATION_SELF",
+    "title": "Syntax",
+    "content": "ANIMATION_SELF Animation_ID . | Animation_ID : The integer ID of an animation. | . ",
+    "url": "/public-wiki-and-bugs/triggers/animation_self/#syntax",
+    
+    "relUrl": "/triggers/animation_self/#syntax"
+  },"12": {
+    "doc": "ANIMATION_SELF",
+    "title": "Examples",
+    "content": "// Trigger when the player digs with a spade ANIMATION_SELF 830 . ",
+    "url": "/public-wiki-and-bugs/triggers/animation_self/#examples",
+    
+    "relUrl": "/triggers/animation_self/#examples"
+  },"13": {
+    "doc": "ANIMATION_SELF",
+    "title": "Notes",
+    "content": ". | To find an animation ID, use Kittykeys -&gt; Settings -&gt; Print events to chat. Animation IDs are also shown with Dev tools -&gt; Players or NPCs (if using dev tools, A holds the current animation ID). | . ",
+    "url": "/public-wiki-and-bugs/triggers/animation_self/#notes",
+    
+    "relUrl": "/triggers/animation_self/#notes"
+  },"14": {
+    "doc": "ANIMATION_SELF",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/triggers/animation_self/#demos",
+    
+    "relUrl": "/triggers/animation_self/#demos"
+  },"15": {
+    "doc": "ANIMATION_TARGET",
+    "title": "ANIMATION_TARGET",
+    "content": "When the specified animation starts on the current TARGET player or NPC, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/animation_target/",
+    
+    "relUrl": "/triggers/animation_target/"
+  },"16": {
+    "doc": "ANIMATION_TARGET",
+    "title": "Syntax",
+    "content": "ANIMATION_TARGET Animation_ID . | Animation_ID : The integer ID of an animation. | . ",
+    "url": "/public-wiki-and-bugs/triggers/animation_target/#syntax",
+    
+    "relUrl": "/triggers/animation_target/#syntax"
+  },"17": {
+    "doc": "ANIMATION_TARGET",
+    "title": "Examples",
+    "content": "// TODO: Examples . ",
+    "url": "/public-wiki-and-bugs/triggers/animation_target/#examples",
+    
+    "relUrl": "/triggers/animation_target/#examples"
+  },"18": {
+    "doc": "ANIMATION_TARGET",
+    "title": "Notes",
+    "content": ". | If the player does not have a target, this command will do nothing. See the TARGET_SET command for more information. | You can find an animation ID by using Kittykeys -&gt; Settings -&gt; Print events to chat, or by using Dev tools -&gt; Player or NPCs (if using dev tools, A holds the current animation ID). | . ",
+    "url": "/public-wiki-and-bugs/triggers/animation_target/#notes",
+    
+    "relUrl": "/triggers/animation_target/#notes"
+  },"19": {
+    "doc": "ANIMATION_TARGET",
+    "title": "Demos",
+    "content": "TODO: Demo . ",
+    "url": "/public-wiki-and-bugs/triggers/animation_target/#demos",
+    
+    "relUrl": "/triggers/animation_target/#demos"
+  },"20": {
+    "doc": "BANK_WIELD",
+    "title": "BANK_WIELD",
+    "content": "Wields items from your bank. ",
+    "url": "/public-wiki-and-bugs/commands/bank_wield/",
+    
+    "relUrl": "/commands/bank_wield/"
+  },"21": {
+    "doc": "BANK_WIELD",
+    "title": "Syntax",
+    "content": "BANK_WIELD Item_Name_1|Item_ID_1[,Item_Name_2|Item_ID_2,...] . | Item_Name : The string name of an item. When specifying items by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards | Item_ID : The integer ID of an item. | . ",
+    "url": "/public-wiki-and-bugs/commands/bank_wield/#syntax",
+    
+    "relUrl": "/commands/bank_wield/#syntax"
+  },"22": {
+    "doc": "BANK_WIELD",
+    "title": "Examples",
+    "content": "BANK_WIELD 4089,4113,4105,4097 . ",
+    "url": "/public-wiki-and-bugs/commands/bank_wield/#examples",
+    
+    "relUrl": "/commands/bank_wield/#examples"
+  },"23": {
+    "doc": "BANK_WIELD",
+    "title": "Notes",
+    "content": ". | Generally, you should prefer items’ integer IDs, as they are more precise. However, in certain situations, using the item’s name with a wildcard is required. | . ",
+    "url": "/public-wiki-and-bugs/commands/bank_wield/#notes",
+    
+    "relUrl": "/commands/bank_wield/#notes"
+  },"24": {
+    "doc": "BANK_WIELD",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/bank_wield/#demos",
+    
+    "relUrl": "/commands/bank_wield/#demos"
+  },"25": {
+    "doc": "Commands",
+    "title": "Commands in Kittykeys",
+    "content": "Commands are the heart of all scripts, they are the instructions that tell a script what to do next. Kittykeys supports the following commands as documented below. If you have any questions, please join the JumpIfZero Plugins Discord server, and we’ll be happy to help! . ",
+    "url": "/public-wiki-and-bugs/commands#commands-in-kittykeys",
+    
+    "relUrl": "/commands#commands-in-kittykeys"
+  },"26": {
+    "doc": "Commands",
+    "title": "Supported Commands",
+    "content": "As of version 1.7.2, Kittykeys supports the following commands: . ",
+    "url": "/public-wiki-and-bugs/commands#supported-commands",
+    
+    "relUrl": "/commands#supported-commands"
+  },"27": {
+    "doc": "Commands",
+    "title": "Commands",
+    "content": "Hey, Listen! . This wiki is not complete (yet). Please refer to the Help tab in the Kittykeys Editor, or to the JZ Plugins Discord server, for the most up-to-date information. ",
+    "url": "/public-wiki-and-bugs/commands",
+    
+    "relUrl": "/commands"
+  },"28": {
+    "doc": "CONSUME",
+    "title": "CONSUME",
+    "content": "Clicks on the first occurrence of the inventory item(s). ",
+    "url": "/public-wiki-and-bugs/commands/consume/",
+    
+    "relUrl": "/commands/consume/"
+  },"29": {
+    "doc": "CONSUME",
+    "title": "Syntax",
+    "content": "CONSUME Item_Name_1|Item_ID_1[,Item_Name_2|Item_ID_2,...] [Identifier] . | Item_Name : The string name of an item. When specifying items by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards. | Item_ID : The integer ID of an item. | Multiple Items (Optional) : To specify multiple items, separate each with a comma and no space. | Identifier (Optional) : The integer value Identifier can be used with a single item if the desired action is not the default action for that item (i.e., if it is not the left-click action). | . TODO: How to locate Identifier . ",
+    "url": "/public-wiki-and-bugs/commands/consume/#syntax",
+    
+    "relUrl": "/commands/consume/#syntax"
+  },"30": {
+    "doc": "CONSUME",
+    "title": "Examples",
+    "content": "// Consume (click) the first occurrence of anything with \"cake\" somewhere in the name CONSUME *cake* // Guzzle the Dwarven rock cake. \"Guzzle\" has an Identifier of 4 CONSUME Dwarven_Rock_cake 4 // This is equivalent, it also guzzles the Dwarven rock cake CONSUME *Rock_cake 4 . ",
+    "url": "/public-wiki-and-bugs/commands/consume/#examples",
+    
+    "relUrl": "/commands/consume/#examples"
+  },"31": {
+    "doc": "CONSUME",
+    "title": "Notes",
+    "content": ". | If you specify multiple items, they will all be consumed within one game tick. | OSRS limits players to 10 actions per each tick. | Generally, you should prefer items’ integer IDs, as they are more precise. However, in certain situations, a wildcard is required. When consuming potions or multiple food items, use the names: | . // GOOD: Consume the first available Sara brew (any dose) CONSUME Saradomin_brew* // GOOD: Triple eat in a single game tick CONSUME Shark,Saradomin_brew*,*karambwan* // BAD: Using the ID for Saradomin Brew(4) would ignore any 3-, 2-, or 1-dose brews. CONSUME 6685 . ",
+    "url": "/public-wiki-and-bugs/commands/consume/#notes",
+    
+    "relUrl": "/commands/consume/#notes"
+  },"32": {
+    "doc": "CONSUME",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/consume/#demos",
+    
+    "relUrl": "/commands/consume/#demos"
+  },"33": {
+    "doc": "CONSUME_ALL",
+    "title": "CONSUME_ALL",
+    "content": "Clicks once on each occurrence of the specified inventory item(s). ",
+    "url": "/public-wiki-and-bugs/commands/consume_all/",
+    
+    "relUrl": "/commands/consume_all/"
+  },"34": {
+    "doc": "CONSUME_ALL",
+    "title": "Syntax",
+    "content": "CONSUME_ALL Item_Name_1|Item_ID_1[,Item_Name_2|Item_ID_2,...] [Identifier] . | Item_Name : The string name of an item. When specifying items by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards | Item_ID : The integer ID of an item. | Multiple Items (Optional) : To specify multiple items, separate each with a comma and no space. | Identifier (Optional) : The integer value Identifier can be used with a single item if the desired action is not the default action for that item (i.e., if it is not the left-click action). | . TODO: How to locate the Identifier . ",
+    "url": "/public-wiki-and-bugs/commands/consume_all/#syntax",
+    
+    "relUrl": "/commands/consume_all/#syntax"
+  },"35": {
+    "doc": "CONSUME_ALL",
+    "title": "Examples",
+    "content": "// Drop all logs in the inventory. 7 is the Identifier for \"drop\". CONSUME_ALL *logs* 7 . ",
+    "url": "/public-wiki-and-bugs/commands/consume_all/#examples",
+    
+    "relUrl": "/commands/consume_all/#examples"
+  },"36": {
+    "doc": "CONSUME_ALL",
+    "title": "Notes",
+    "content": ". | If you specify multiple items, they will all be consumed within one game tick. | OSRS limits players to 10 actions per each tick. | Generally, you should prefer items’ integer IDs, as they are more precise. However, in certain situations, using the item’s name with a wildcard is required. | . ",
+    "url": "/public-wiki-and-bugs/commands/consume_all/#notes",
+    
+    "relUrl": "/commands/consume_all/#notes"
+  },"37": {
+    "doc": "CONSUME_ALL",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/consume_all/#demos",
+    
+    "relUrl": "/commands/consume_all/#demos"
+  },"38": {
+    "doc": "CUSTOM",
+    "title": "CUSTOM",
+    "content": "Performs any action, even actions that are not natively supported by an exsisting command. ",
+    "url": "/public-wiki-and-bugs/commands/custom/",
+    
+    "relUrl": "/commands/custom/"
+  },"39": {
+    "doc": "CUSTOM",
+    "title": "Syntax",
+    "content": "CUSTOM Lots of Required integers . ",
+    "url": "/public-wiki-and-bugs/commands/custom/#syntax",
+    
+    "relUrl": "/commands/custom/#syntax"
+  },"40": {
+    "doc": "CUSTOM",
+    "title": "Examples",
+    "content": "I want to toggle run, but there’s no RUN command! . | Switch to the Game chat tab in OSRS | Go to Kittykeys → Settings → Debug | Enable Print clicks to chat | Perform the desired action, and see which numbers Kittykeys prints to Game chat | (Optional) Disable Print clicks to chat to keep the chatbox clean | Enter every number as a parameter to the custom command | . ",
+    "url": "/public-wiki-and-bugs/commands/custom/#examples",
+    
+    "relUrl": "/commands/custom/#examples"
+  },"41": {
+    "doc": "CUSTOM",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/custom/#demos",
+    
+    "relUrl": "/commands/custom/#demos"
+  },"42": {
+    "doc": "CUSTOM",
+    "title": "Notes",
+    "content": ". | Every number printed for a given click is required. Separate each number with one space. | . CUSTOM will not work for actions where the identifiers or parameters will change, including any click on game objects, or if an inventory item moves to a different slot. For actions that have have their own command (e.g., OBJECT or CONSUME), use the dedicated command instead. ",
+    "url": "/public-wiki-and-bugs/commands/custom/#notes",
+    
+    "relUrl": "/commands/custom/#notes"
+  },"43": {
+    "doc": "DEATH",
+    "title": "DEATH",
+    "content": "When the player dies, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/death/",
+    
+    "relUrl": "/triggers/death/"
+  },"44": {
+    "doc": "DEATH",
+    "title": "Syntax",
+    "content": "DEATH . | This trigger takes no arguments. | . ",
+    "url": "/public-wiki-and-bugs/triggers/death/#syntax",
+    
+    "relUrl": "/triggers/death/#syntax"
+  },"45": {
+    "doc": "DEATH",
+    "title": "Examples",
+    "content": "// TODO: Examples of death trigger? . ",
+    "url": "/public-wiki-and-bugs/triggers/death/#examples",
+    
+    "relUrl": "/triggers/death/#examples"
+  },"46": {
+    "doc": "DEATH",
+    "title": "Notes",
+    "content": ". | F :’) | . ",
+    "url": "/public-wiki-and-bugs/triggers/death/#notes",
+    
+    "relUrl": "/triggers/death/#notes"
+  },"47": {
+    "doc": "DEATH",
+    "title": "Demos",
+    "content": "TODO: Demo of death trigger? . ",
+    "url": "/public-wiki-and-bugs/triggers/death/#demos",
+    
+    "relUrl": "/triggers/death/#demos"
+  },"48": {
+    "doc": "EMOTE",
+    "title": "EMOTE",
+    "content": "Performs the emote with the specified name. ",
+    "url": "/public-wiki-and-bugs/commands/emote/",
+    
+    "relUrl": "/commands/emote/"
+  },"49": {
+    "doc": "EMOTE",
+    "title": "Syntax",
+    "content": "EMOTE Emote_Name . | Emote_Name : The name of an emote to perform. When specifying an emote, use underscores instead of spaces, and do not use quotes. | . ",
+    "url": "/public-wiki-and-bugs/commands/emote/#syntax",
+    
+    "relUrl": "/commands/emote/#syntax"
+  },"50": {
+    "doc": "EMOTE",
+    "title": "Examples",
+    "content": "// Dance like no one's watching EMOTE Dance // Show off your skillcape (does nothing if a skillcape is not equipped) EMOTE Skill_Cape . ",
+    "url": "/public-wiki-and-bugs/commands/emote/#examples",
+    
+    "relUrl": "/commands/emote/#examples"
+  },"51": {
+    "doc": "EMOTE",
+    "title": "Notes",
+    "content": ". | Only specify one emote per command. // BAD: One command won't perform multiple emotes EMOTE Dance,Bow // GOOD: Use separate commands to perform a sequence of emotes EMOTE Dance EMOTE Bow . | . ",
+    "url": "/public-wiki-and-bugs/commands/emote/#notes",
+    
+    "relUrl": "/commands/emote/#notes"
+  },"52": {
+    "doc": "EMOTE",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/emote/#demos",
+    
+    "relUrl": "/commands/emote/#demos"
+  },"53": {
+    "doc": "GAME_OBJECT_SPAWN",
+    "title": "GAME_OBJECT_SPAWN",
+    "content": "When game object spawns, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/game_object_spawn/",
+    
+    "relUrl": "/triggers/game_object_spawn/"
+  },"54": {
+    "doc": "GAME_OBJECT_SPAWN",
+    "title": "Syntax",
+    "content": "GAME_OBJECT_SPAWN ObjectID . | ObjectID | . ",
+    "url": "/public-wiki-and-bugs/triggers/game_object_spawn/#syntax",
+    
+    "relUrl": "/triggers/game_object_spawn/#syntax"
+  },"55": {
+    "doc": "GAME_OBJECT_SPAWN",
+    "title": "Examples GAME_OBJECT_SPAWN 9036",
+    "content": " ",
+    "url": "/public-wiki-and-bugs/triggers/game_object_spawn/#examples-game_object_spawn-9036",
+    
+    "relUrl": "/triggers/game_object_spawn/#examples-game_object_spawn-9036"
+  },"56": {
+    "doc": "GAME_OBJECT_SPAWN",
+    "title": "Notes",
+    "content": " ",
+    "url": "/public-wiki-and-bugs/triggers/game_object_spawn/#notes",
+    
+    "relUrl": "/triggers/game_object_spawn/#notes"
+  },"57": {
+    "doc": "GRAPHIC_SELF",
+    "title": "GRAPHIC_SELF",
+    "content": "Triggers when the specified graphic is rendered on the player. ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_self/",
+    
+    "relUrl": "/triggers/graphic_self/"
+  },"58": {
+    "doc": "GRAPHIC_SELF",
+    "title": "Syntax",
+    "content": "GRAPHIC_SELF Graphic_ID . | Graphic_ID | . ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_self/#syntax",
+    
+    "relUrl": "/triggers/graphic_self/#syntax"
+  },"59": {
+    "doc": "GRAPHIC_SELF",
+    "title": "Examples",
+    "content": "// Graphic 264 is used when the player cast blooms with a silver sickle (b) GRAPHIC_SELF 264 . ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_self/#examples",
+    
+    "relUrl": "/triggers/graphic_self/#examples"
+  },"60": {
+    "doc": "GRAPHIC_SELF",
+    "title": "Notes",
+    "content": ". | You can find an ID by using Kittykeys -&gt; Settings -&gt; Print events to chat, or by using Dev tools -&gt; Player (if using dev tools, G holds the current graphic ID). | . ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_self/#notes",
+    
+    "relUrl": "/triggers/graphic_self/#notes"
+  },"61": {
+    "doc": "GRAPHIC_SELF",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_self/#demos",
+    
+    "relUrl": "/triggers/graphic_self/#demos"
+  },"62": {
+    "doc": "GRAPHIC_SPAWN",
+    "title": "GRAPHIC_SPAWN",
+    "content": "When the specified graphic spawns nearby, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_spawn/",
+    
+    "relUrl": "/triggers/graphic_spawn/"
+  },"63": {
+    "doc": "GRAPHIC_SPAWN",
+    "title": "Syntax",
+    "content": "GRAPHIC_SPAWN Graphic_ID . | Graphic_ID : The integer ID of a graphic. | . ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_spawn/#syntax",
+    
+    "relUrl": "/triggers/graphic_spawn/#syntax"
+  },"64": {
+    "doc": "GRAPHIC_SPAWN",
+    "title": "Examples",
+    "content": "// Ice Barage was cast on another player nearby GRAPHIC_SPAWN 369 . TODO: Other Examples . ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_spawn/#examples",
+    
+    "relUrl": "/triggers/graphic_spawn/#examples"
+  },"65": {
+    "doc": "GRAPHIC_SPAWN",
+    "title": "Notes",
+    "content": ". | Although dev Tools is required to find specific IDs (graphic or animation), graphics are “external” to the player in most cases: . | Someone casting aspell on the player (e.g., ice barrage). | An item adding something, such as Bloom cast with a silver sickle (b). | . | The RuneLite API documents a partial list of graphics in Graphic_ID.java. | . ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_spawn/#notes",
+    
+    "relUrl": "/triggers/graphic_spawn/#notes"
+  },"66": {
+    "doc": "GRAPHIC_SPAWN",
+    "title": "Demo",
+    "content": "TODO: Demo . ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_spawn/#demo",
+    
+    "relUrl": "/triggers/graphic_spawn/#demo"
+  },"67": {
+    "doc": "GRAPHIC_TARGET",
+    "title": "GRAPHIC_TARGET",
+    "content": "Triggers when the specified graphic is rendered on the current target. ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_target/",
+    
+    "relUrl": "/triggers/graphic_target/"
+  },"68": {
+    "doc": "GRAPHIC_TARGET",
+    "title": "Syntax",
+    "content": "GRAPHIC_TARGET Graphic_ID_1[,Graphic_ID_2] . | Graphic_ID | . ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_target/#syntax",
+    
+    "relUrl": "/triggers/graphic_target/#syntax"
+  },"69": {
+    "doc": "GRAPHIC_TARGET",
+    "title": "Examples",
+    "content": "// Graphic 264 is used when the player casts bloom with a silver sickle (b) GRAPHIC_TARGET 264 . ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_target/#examples",
+    
+    "relUrl": "/triggers/graphic_target/#examples"
+  },"70": {
+    "doc": "GRAPHIC_TARGET",
+    "title": "Notes",
+    "content": ". | You can find an ID by using Kittykeys -&gt; Settings -&gt; Print events to chat, or by using Dev tools -&gt; NPC or Player (if using dev tools, G holds the current graphic ID). | . ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_target/#notes",
+    
+    "relUrl": "/triggers/graphic_target/#notes"
+  },"71": {
+    "doc": "GRAPHIC_TARGET",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/triggers/graphic_target/#demos",
+    
+    "relUrl": "/triggers/graphic_target/#demos"
+  },"72": {
+    "doc": "HITSPLAT",
+    "title": "HITSPLAT",
+    "content": "Triggers when a hitsplat lands on the player’s current target. ",
+    "url": "/public-wiki-and-bugs/triggers/hitsplat/",
+    
+    "relUrl": "/triggers/hitsplat/"
+  },"73": {
+    "doc": "HITSPLAT",
+    "title": "Syntax",
+    "content": "HITSPLAT [Min_Value] . | Min_Value (Optional) : Only trigger when a hitsplat higher than the specified value lands on the target. If no value is specified, all hits (not 0) will activate the trigger. | . ",
+    "url": "/public-wiki-and-bugs/triggers/hitsplat/#syntax",
+    
+    "relUrl": "/triggers/hitsplat/#syntax"
+  },"74": {
+    "doc": "HITSPLAT",
+    "title": "Examples",
+    "content": "// Activate if any hitsplat lands on the target, except 0 HITSPLAT // Activate only if a hitsplat of 5 or greater lands on the target HITSPLAT 5 . ",
+    "url": "/public-wiki-and-bugs/triggers/hitsplat/#examples",
+    
+    "relUrl": "/triggers/hitsplat/#examples"
+  },"75": {
+    "doc": "HITSPLAT",
+    "title": "Notes",
+    "content": ". | The type of hitsplat (poison, venom, normal damage) does not matter. | . ",
+    "url": "/public-wiki-and-bugs/triggers/hitsplat/#notes",
+    
+    "relUrl": "/triggers/hitsplat/#notes"
+  },"76": {
+    "doc": "HITSPLAT",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/triggers/hitsplat/#demos",
+    
+    "relUrl": "/triggers/hitsplat/#demos"
+  },"77": {
+    "doc": "IDLE",
+    "title": "IDLE",
+    "content": "When the player returns to idle, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/idle/",
+    
+    "relUrl": "/triggers/idle/"
+  },"78": {
+    "doc": "IDLE",
+    "title": "Syntax",
+    "content": "IDLE [minMS] [maxMS] . | minMS : When one or two values are supplied, this is the exact or minimum number of milliseconds that the player will be idle before the trigger activates. | maxMS : When two values are supplied, this is the maximum number of milliseconds that the player will be idle before the trigger activates. A random number between minMS and MaxMS is selected for the trigger delay. | . ",
+    "url": "/public-wiki-and-bugs/triggers/idle/#syntax",
+    
+    "relUrl": "/triggers/idle/#syntax"
+  },"79": {
+    "doc": "INTERACTION_END",
+    "title": "INTERACTION_END",
+    "content": "When player interaction ends (returns to null), this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/interaction_end/",
+    
+    "relUrl": "/triggers/interaction_end/"
+  },"80": {
+    "doc": "INTERACTION_END",
+    "title": "Syntax",
+    "content": "INTERACTION_END . | This trigger takes no arguments. | . ",
+    "url": "/public-wiki-and-bugs/triggers/interaction_end/#syntax",
+    
+    "relUrl": "/triggers/interaction_end/#syntax"
+  },"81": {
+    "doc": "INVENTORY_EMPTY",
+    "title": "INVENTORY_EMPTY",
+    "content": "When the player’s inventory becomes empty, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/inventory_empty/",
+    
+    "relUrl": "/triggers/inventory_empty/"
+  },"82": {
+    "doc": "INVENTORY_EMPTY",
+    "title": "Syntax",
+    "content": "INVENTORY_EMPTY . | This trigger takes no arguments. | . ",
+    "url": "/public-wiki-and-bugs/triggers/inventory_empty/#syntax",
+    
+    "relUrl": "/triggers/inventory_empty/#syntax"
+  },"83": {
+    "doc": "INVENTORY_EMPTY",
+    "title": "Notes",
+    "content": ". | Useful for various skilling and bankstanding. | . ",
+    "url": "/public-wiki-and-bugs/triggers/inventory_empty/#notes",
+    
+    "relUrl": "/triggers/inventory_empty/#notes"
+  },"84": {
+    "doc": "INVENTORY_FULL",
+    "title": "INVENTORY_FULL",
+    "content": "When the player’s inventory becomes full, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/inventory_full/",
+    
+    "relUrl": "/triggers/inventory_full/"
+  },"85": {
+    "doc": "INVENTORY_FULL",
+    "title": "Syntax",
+    "content": "INVENTORY_FULL . | This trigger takes no arguments. | . ",
+    "url": "/public-wiki-and-bugs/triggers/inventory_full/#syntax",
+    
+    "relUrl": "/triggers/inventory_full/#syntax"
+  },"86": {
+    "doc": "INVENTORY_FULL",
+    "title": "Notes",
+    "content": ". | Useful for various skilling and bankstanding. | . ",
+    "url": "/public-wiki-and-bugs/triggers/inventory_full/#notes",
+    
+    "relUrl": "/triggers/inventory_full/#notes"
+  },"87": {
+    "doc": "INVENTORY_FULL",
+    "title": "Demos",
+    "content": "TODO: Demo? . ",
+    "url": "/public-wiki-and-bugs/triggers/inventory_full/#demos",
+    
+    "relUrl": "/triggers/inventory_full/#demos"
+  },"88": {
+    "doc": "ITEM_NPC",
+    "title": "ITEM_NPC",
+    "content": "Uses the first occurrence of an inventory item on your NPC target. ",
+    "url": "/public-wiki-and-bugs/commands/item_npc/",
+    
+    "relUrl": "/commands/item_npc/"
+  },"89": {
+    "doc": "ITEM_NPC",
+    "title": "Syntax",
+    "content": "ITEM_NPC Item_Name|Item_ID . | Item_Name : The string name of an item. When specifying items by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards | Item_ID : The integer ID of an item. | . ",
+    "url": "/public-wiki-and-bugs/commands/item_npc/#syntax",
+    
+    "relUrl": "/commands/item_npc/#syntax"
+  },"90": {
+    "doc": "ITEM_NPC",
+    "title": "Examples",
+    "content": "// Use noted bowstrings (1778) on the current target NPC ITEM_NPC 1778 . ",
+    "url": "/public-wiki-and-bugs/commands/item_npc/#examples",
+    
+    "relUrl": "/commands/item_npc/#examples"
+  },"91": {
+    "doc": "ITEM_NPC",
+    "title": "Notes",
+    "content": ". | If the player does not have a target, this command will do nothing. See TARGET_SET for more information. | Generally, you should prefer items’ integer IDs, as they are more precise. However, in certain situations, using the item’s name with a wildcard is required. | . ",
+    "url": "/public-wiki-and-bugs/commands/item_npc/#notes",
+    
+    "relUrl": "/commands/item_npc/#notes"
+  },"92": {
+    "doc": "ITEM_NPC",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/item_npc/#demos",
+    
+    "relUrl": "/commands/item_npc/#demos"
+  },"93": {
+    "doc": "ITEM_SPAWN",
+    "title": "ITEM_SPAWN",
+    "content": "When item spawns on ground, this trigger is hit. , or using dev tools &gt; ground items and getting the itemID from it. ",
+    "url": "/public-wiki-and-bugs/triggers/item_spawn/",
+    
+    "relUrl": "/triggers/item_spawn/"
+  },"94": {
+    "doc": "ITEM_SPAWN",
+    "title": "Syntax",
+    "content": "ITEM_SPAWN ItemID . | Item_ID : The integer ID of an item. | . ",
+    "url": "/public-wiki-and-bugs/triggers/item_spawn/#syntax",
+    
+    "relUrl": "/triggers/item_spawn/#syntax"
+  },"95": {
+    "doc": "ITEM_SPAWN",
+    "title": "Examples",
+    "content": "// TODO: Examples . ",
+    "url": "/public-wiki-and-bugs/triggers/item_spawn/#examples",
+    
+    "relUrl": "/triggers/item_spawn/#examples"
+  },"96": {
+    "doc": "ITEM_SPAWN",
+    "title": "Notes",
+    "content": ". | Lookup item IDs by using Print events to chat in Kittykeys Settings, or by using Dev Tools -&gt; Ground Items | Find item IDs online: https://chinplugins.xyz/items | . ",
+    "url": "/public-wiki-and-bugs/triggers/item_spawn/#notes",
+    
+    "relUrl": "/triggers/item_spawn/#notes"
+  },"97": {
+    "doc": "ITEM_USE",
+    "title": "ITEM_USE",
+    "content": "Combines the first occurrence of inventory item 1 with the first occurrence of inventory item. ",
+    "url": "/public-wiki-and-bugs/commands/item_use/",
+    
+    "relUrl": "/commands/item_use/"
+  },"98": {
+    "doc": "ITEM_USE",
+    "title": "Syntax",
+    "content": "ITEM_USE Item_Name_1|Item_ID_1 Item_Name_2|Item_ID_2 . | Item_Name : The string name of an item. When specifying items by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards | Item_ID : The integer ID of an item. | . ",
+    "url": "/public-wiki-and-bugs/commands/item_use/#syntax",
+    
+    "relUrl": "/commands/item_use/#syntax"
+  },"99": {
+    "doc": "ITEM_USE",
+    "title": "Examples",
+    "content": "// Attach a stack of feathers to a stack of dart tips (any type) ITEM_USE Feather *Dart_tip* // This example specifically uses a feather on Adamant dart tips. // Remember: All integer IDs are unique! ITEM_USE Feather 823 . ",
+    "url": "/public-wiki-and-bugs/commands/item_use/#examples",
+    
+    "relUrl": "/commands/item_use/#examples"
+  },"100": {
+    "doc": "ITEM_USE",
+    "title": "Notes:",
+    "content": ". | Generally, you should prefer items’ integer IDs, as they are more precise. However, in certain situations, using the item’s name with a wildcard is required. | . ",
+    "url": "/public-wiki-and-bugs/commands/item_use/#notes",
+    
+    "relUrl": "/commands/item_use/#notes"
+  },"101": {
+    "doc": "ITEM_USE",
+    "title": "Demo:",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/item_use/#demo",
+    
+    "relUrl": "/commands/item_use/#demo"
+  },"102": {
+    "doc": "MOVE",
+    "title": "MOVE",
+    "content": "Moves the player in a straight line, relative to the player’s current position. ",
+    "url": "/public-wiki-and-bugs/commands/move/",
+    
+    "relUrl": "/commands/move/"
+  },"103": {
+    "doc": "MOVE",
+    "title": "Syntax",
+    "content": "MOVE X Y . ",
+    "url": "/public-wiki-and-bugs/commands/move/#syntax",
+    
+    "relUrl": "/commands/move/#syntax"
+  },"104": {
+    "doc": "MOVE",
+    "title": "Examples",
+    "content": "// Move one tile up and one tile to the right MOVE -1 -1 // Move six tiles down and one tile to the left MOVE 6 1 // Move nine tiles to the right MOVE 0 -9 . ",
+    "url": "/public-wiki-and-bugs/commands/move/#examples",
+    
+    "relUrl": "/commands/move/#examples"
+  },"105": {
+    "doc": "MOVE",
+    "title": "Notes",
+    "content": ". | MOVE is best used over short distances, such as to step away from an area-of-effect (AOE) attack. For longer distances, consider using the SCENE_WALK command. | The player’s current position is treated as (0,0) on an invisible grid of world tiles. All movements are specified as n tiles away from wherever the player is already standing on the X and Y axes. | Positive X is Right. Negative X is Left. | Negative Y is Down. Positive Y is Up. | An X or Y value of 0 means “do not move” (left/right or up/down) | . | . ",
+    "url": "/public-wiki-and-bugs/commands/move/#notes",
+    
+    "relUrl": "/commands/move/#notes"
+  },"106": {
+    "doc": "MOVE",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/move/#demos",
+    
+    "relUrl": "/commands/move/#demos"
+  },"107": {
+    "doc": "NPC_DESPAWN",
+    "title": "NPC_DESPAWN",
+    "content": "When the specified NPC despawns nearby, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/npc_despawn/",
+    
+    "relUrl": "/triggers/npc_despawn/"
+  },"108": {
+    "doc": "NPC_DESPAWN",
+    "title": "Syntax",
+    "content": "NPC_DESPAWN NPC_Name|NPC_ID . | NPC_Name : The string name of an NPC. When specifying an NPC by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards | NPC_ID : The integer ID of an NPC. | . ",
+    "url": "/public-wiki-and-bugs/triggers/npc_despawn/#syntax",
+    
+    "relUrl": "/triggers/npc_despawn/#syntax"
+  },"109": {
+    "doc": "NPC_DESPAWN",
+    "title": "Examples",
+    "content": "NPC_DESPAWN Vet* . ",
+    "url": "/public-wiki-and-bugs/triggers/npc_despawn/#examples",
+    
+    "relUrl": "/triggers/npc_despawn/#examples"
+  },"110": {
+    "doc": "NPC_DESPAWN",
+    "title": "Notes",
+    "content": ". | If more than one of the same NPC are nearby, matches the closest NPC to the player. | . ",
+    "url": "/public-wiki-and-bugs/triggers/npc_despawn/#notes",
+    
+    "relUrl": "/triggers/npc_despawn/#notes"
+  },"111": {
+    "doc": "NPC_DESPAWN",
+    "title": "Demo",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/triggers/npc_despawn/#demo",
+    
+    "relUrl": "/triggers/npc_despawn/#demo"
+  },"112": {
+    "doc": "NPC_SPAWN",
+    "title": "NPC_SPAWN",
+    "content": "When the specified NPC spawn snearby, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/npc_spawn/",
+    
+    "relUrl": "/triggers/npc_spawn/"
+  },"113": {
+    "doc": "NPC_SPAWN",
+    "title": "Syntax",
+    "content": "NPC_SPAWN NPC_Name|NPC_ID . | NPC_Name : The string name of an NPC. When specifying an NPC by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards | NPC_ID : The integer ID of an NPC. | . ",
+    "url": "/public-wiki-and-bugs/triggers/npc_spawn/#syntax",
+    
+    "relUrl": "/triggers/npc_spawn/#syntax"
+  },"114": {
+    "doc": "NPC_SPAWN",
+    "title": "Examples",
+    "content": "NPC_SPAWN 6611 . ",
+    "url": "/public-wiki-and-bugs/triggers/npc_spawn/#examples",
+    
+    "relUrl": "/triggers/npc_spawn/#examples"
+  },"115": {
+    "doc": "NPC_SPAWN",
+    "title": "Notes",
+    "content": ". | Find NPC IDs using Dev Tools -&gt; NPCs | Used with SET_TARGET for other commands | . ",
+    "url": "/public-wiki-and-bugs/triggers/npc_spawn/#notes",
+    
+    "relUrl": "/triggers/npc_spawn/#notes"
+  },"116": {
+    "doc": "NPC_SPAWN",
+    "title": "Demos",
+    "content": "TODO: Demo . ",
+    "url": "/public-wiki-and-bugs/triggers/npc_spawn/#demos",
+    
+    "relUrl": "/triggers/npc_spawn/#demos"
+  },"117": {
+    "doc": "OBJECT",
+    "title": "OBJECT",
+    "content": "Clicks on the first instance of the specified game object, decoration object, or wall object nearby. ",
+    "url": "/public-wiki-and-bugs/commands/object/",
+    
+    "relUrl": "/commands/object/"
+  },"118": {
+    "doc": "OBJECT",
+    "title": "Syntax",
+    "content": "OBJECT Object_ID [MenuAction] . | MenuAction (Optional) : The integer value MenuAction can be if the desired action is not the default action for that object (i.e., if it is not the left-click action). | . ",
+    "url": "/public-wiki-and-bugs/commands/object/#syntax",
+    
+    "relUrl": "/commands/object/#syntax"
+  },"119": {
+    "doc": "OBJECT",
+    "title": "Examples",
+    "content": "// TODO: Examples // Game object (use Dev tools -&gt; Objects) OBJECT 12308 // Wall object (Use Dev tools -&gt; Walls) OBJECT *vein* . ",
+    "url": "/public-wiki-and-bugs/commands/object/#examples",
+    
+    "relUrl": "/commands/object/#examples"
+  },"120": {
+    "doc": "OBJECT",
+    "title": "Notes",
+    "content": ". | TODO: Notes | . ",
+    "url": "/public-wiki-and-bugs/commands/object/#notes",
+    
+    "relUrl": "/commands/object/#notes"
+  },"121": {
+    "doc": "OBJECT",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/object/#demos",
+    
+    "relUrl": "/commands/object/#demos"
+  },"122": {
+    "doc": "OVERHEAD",
+    "title": "OVERHEAD",
+    "content": "When target overhead changes, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/overhead/",
+    
+    "relUrl": "/triggers/overhead/"
+  },"123": {
+    "doc": "OVERHEAD",
+    "title": "Syntax",
+    "content": "OVERHEAD Overheadname . | OVERHEAD_NAME : The string name of an overhead. When specifying an overhead by name, use UPPERCASE with underscores instead of spaces, and do not use quotes. | . ",
+    "url": "/public-wiki-and-bugs/triggers/overhead/#syntax",
+    
+    "relUrl": "/triggers/overhead/#syntax"
+  },"124": {
+    "doc": "OVERHEAD",
+    "title": "Examples",
+    "content": "TODO: Some examples . ",
+    "url": "/public-wiki-and-bugs/triggers/overhead/#examples",
+    
+    "relUrl": "/triggers/overhead/#examples"
+  },"125": {
+    "doc": "OVERHEAD",
+    "title": "Notes",
+    "content": ". | Useful when making demonic gorilla swapper for example. | Possible values are: . | MELEE | RANGED | MAGIC | RETRIBUTION | SMITE | REDEMPTION | RANGE_MAGE | RANGE_MELEE | MAGE_MELEE | RANGE_MAGE_MELEE | WRATH | SOUL_SPLIT | DEFLECT_MELEE | DEFLECT_RANGE | DEFLECT_MAGE | . | . ",
+    "url": "/public-wiki-and-bugs/triggers/overhead/#notes",
+    
+    "relUrl": "/triggers/overhead/#notes"
+  },"126": {
+    "doc": "OVERHEAD",
+    "title": "Demos",
+    "content": "TODO: Demos? . ",
+    "url": "/public-wiki-and-bugs/triggers/overhead/#demos",
+    
+    "relUrl": "/triggers/overhead/#demos"
+  },"127": {
+    "doc": "PICKUP",
+    "title": "PICKUP",
+    "content": "Pick up an item from the ground. ",
+    "url": "/public-wiki-and-bugs/commands/pickup/",
+    
+    "relUrl": "/commands/pickup/"
+  },"128": {
+    "doc": "PICKUP",
+    "title": "Syntax",
+    "content": "PICKUP [1] . | Use 1 to telegrab instead of picking up by walking. | . ",
+    "url": "/public-wiki-and-bugs/commands/pickup/#syntax",
+    
+    "relUrl": "/commands/pickup/#syntax"
+  },"129": {
+    "doc": "PICKUP",
+    "title": "Examples",
+    "content": "// Telegrab a jug . ",
+    "url": "/public-wiki-and-bugs/commands/pickup/#examples",
+    
+    "relUrl": "/commands/pickup/#examples"
+  },"130": {
+    "doc": "PICKUP",
+    "title": "Notes",
+    "content": ". | Use only with ITEM_SPAWN trigger. | . ",
+    "url": "/public-wiki-and-bugs/commands/pickup/#notes",
+    
+    "relUrl": "/commands/pickup/#notes"
+  },"131": {
+    "doc": "PICKUP",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/pickup/#demos",
+    
+    "relUrl": "/commands/pickup/#demos"
+  },"132": {
+    "doc": "PLAYER_DESPAWN",
+    "title": "PLAYER_DESPAWN",
+    "content": "When a player with a matching namne despawns nearby, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/player_despawn/",
+    
+    "relUrl": "/triggers/player_despawn/"
+  },"133": {
+    "doc": "PLAYER_DESPAWN",
+    "title": "Syntax",
+    "content": "PLAYER_SPAWN Player_Name . | Player_Name : The string Display Name of any player. When specifying a player by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards | . ",
+    "url": "/public-wiki-and-bugs/triggers/player_despawn/#syntax",
+    
+    "relUrl": "/triggers/player_despawn/#syntax"
+  },"134": {
+    "doc": "PLAYER_DESPAWN",
+    "title": "Examples",
+    "content": "// When any player despawns nearby PLAYER_DESPAWN * // When Sir_Pugger despawns nearby PLAYER_DESPAWN Sir_Pugger . ",
+    "url": "/public-wiki-and-bugs/triggers/player_despawn/#examples",
+    
+    "relUrl": "/triggers/player_despawn/#examples"
+  },"135": {
+    "doc": "PLAYER_DESPAWN",
+    "title": "Notes",
+    "content": " ",
+    "url": "/public-wiki-and-bugs/triggers/player_despawn/#notes",
+    
+    "relUrl": "/triggers/player_despawn/#notes"
+  },"136": {
+    "doc": "PLAYER_DESPAWN",
+    "title": "Demo",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/triggers/player_despawn/#demo",
+    
+    "relUrl": "/triggers/player_despawn/#demo"
+  },"137": {
+    "doc": "PLAYER_SPAWN",
+    "title": "PLAYER_SPAWN",
+    "content": "When a player with a matching namne spawns nearby, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/player_spawn/",
+    
+    "relUrl": "/triggers/player_spawn/"
+  },"138": {
+    "doc": "PLAYER_SPAWN",
+    "title": "Syntax",
+    "content": "PLAYER_SPAWN Player_Name . | Player_Name : The string Display Name of any player. When specifying a player by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards | . ",
+    "url": "/public-wiki-and-bugs/triggers/player_spawn/#syntax",
+    
+    "relUrl": "/triggers/player_spawn/#syntax"
+  },"139": {
+    "doc": "PLAYER_SPAWN",
+    "title": "Examples",
+    "content": "// When any player spawns nearby PLAYER_SPAWN * // When Sir Pugger spawns nearby PLAYER_SPAWN Sir_Pugger . ",
+    "url": "/public-wiki-and-bugs/triggers/player_spawn/#examples",
+    
+    "relUrl": "/triggers/player_spawn/#examples"
+  },"140": {
+    "doc": "PLAYER_SPAWN",
+    "title": "Notes",
+    "content": " ",
+    "url": "/public-wiki-and-bugs/triggers/player_spawn/#notes",
+    
+    "relUrl": "/triggers/player_spawn/#notes"
+  },"141": {
+    "doc": "PLAYER_SPAWN",
+    "title": "Demo",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/triggers/player_spawn/#demo",
+    
+    "relUrl": "/triggers/player_spawn/#demo"
+  },"142": {
+    "doc": "PRAYER",
+    "title": "PRAYER",
+    "content": "Activates, deactivates, or toggles a prayer by name. ",
+    "url": "/public-wiki-and-bugs/commands/prayer/",
+    
+    "relUrl": "/commands/prayer/"
+  },"143": {
+    "doc": "PRAYER",
+    "title": "Syntax",
+    "content": "PRAYER_NAME [0|1] . | PRAYER_NAME : The string name of a prayer. When specifying a prayer by name, use UPPERCASE with underscores instead of spaces, and do not use quotes. | 0 (Optional) : Force the named prayer OFF, regardless of its current state. | 1 (Optional) : Force the named prayer ON, regardless of its current state. | If no second parameter is specified, this command will toggle the named prayer to the opposite state. | . ",
+    "url": "/public-wiki-and-bugs/commands/prayer/#syntax",
+    
+    "relUrl": "/commands/prayer/#syntax"
+  },"144": {
+    "doc": "PRAYER",
+    "title": "Examples",
+    "content": "// Always disable Protect from Melee PROTECT_FROM_MELEE 0 // Always enable Protect from Melee PROTECT_FROM_MELEE 1 // Toggle (reverse) the current state of Protect from Melee PROTECT_FROM_MELEE . ",
+    "url": "/public-wiki-and-bugs/commands/prayer/#examples",
+    
+    "relUrl": "/commands/prayer/#examples"
+  },"145": {
+    "doc": "PRAYER",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/prayer/#demos",
+    
+    "relUrl": "/commands/prayer/#demos"
+  },"146": {
+    "doc": "PROJECTILE",
+    "title": "PROJECTILE",
+    "content": "When projectile with the specified ID spawns, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/projectile/",
+    
+    "relUrl": "/triggers/projectile/"
+  },"147": {
+    "doc": "PROJECTILE",
+    "title": "Syntax",
+    "content": "PROJECTILE Projectile_ID . | Projectile_ID : The integer ID of a projectile. | . ",
+    "url": "/public-wiki-and-bugs/triggers/projectile/#syntax",
+    
+    "relUrl": "/triggers/projectile/#syntax"
+  },"148": {
+    "doc": "PROJECTILE",
+    "title": "Examples",
+    "content": "TODO: Add examples . ",
+    "url": "/public-wiki-and-bugs/triggers/projectile/#examples",
+    
+    "relUrl": "/triggers/projectile/#examples"
+  },"149": {
+    "doc": "PROJECTILE",
+    "title": "Notes",
+    "content": ". | You can find a projectile ID by using Kittykeys -&gt; Settings -&gt; Print events to chat, or by using Dev tools -&gt; Projectiles | . ",
+    "url": "/public-wiki-and-bugs/triggers/projectile/#notes",
+    
+    "relUrl": "/triggers/projectile/#notes"
+  },"150": {
+    "doc": "PROJECTILE",
+    "title": "Demo",
+    "content": "TODO: Demo . ",
+    "url": "/public-wiki-and-bugs/triggers/projectile/#demo",
+    
+    "relUrl": "/triggers/projectile/#demo"
+  },"151": {
+    "doc": "QUICK_PRAYER",
+    "title": "QUICK_PRAYER",
+    "content": "Activates, deactivates, or toggles the player’s previously defined quick prayers. ",
+    "url": "/public-wiki-and-bugs/commands/quick_prayer/",
+    
+    "relUrl": "/commands/quick_prayer/"
+  },"152": {
+    "doc": "QUICK_PRAYER",
+    "title": "Syntax",
+    "content": "QUICK_PRAYER [0|1] . | 0 (Optional) : Force the player’s quick prayers OFF, regardless of the current state. | 1 (Optional) : Force the player’s quick prayers ON, regardless of the current state. | If no parameter is specified, this command will toggle the player’s quick prayers to the opposite state. | . ",
+    "url": "/public-wiki-and-bugs/commands/quick_prayer/#syntax",
+    
+    "relUrl": "/commands/quick_prayer/#syntax"
+  },"153": {
+    "doc": "QUICK_PRAYER",
+    "title": "Examples",
+    "content": "// Always disable quick prayers QUICK_PRAYER 0 // Always enable quick prayers QUICK_PRAYER 1 // Toggle (reverse) the current state of quick prayers QUICK_PRAYER . ",
+    "url": "/public-wiki-and-bugs/commands/quick_prayer/#examples",
+    
+    "relUrl": "/commands/quick_prayer/#examples"
+  },"154": {
+    "doc": "QUICK_PRAYER",
+    "title": "Notes",
+    "content": ". | Requires quick prayers to be previously set. If there are no quick prayers configured, this command will do nothing. | . ",
+    "url": "/public-wiki-and-bugs/commands/quick_prayer/#notes",
+    
+    "relUrl": "/commands/quick_prayer/#notes"
+  },"155": {
+    "doc": "QUICK_PRAYER",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/quick_prayer/#demos",
+    
+    "relUrl": "/commands/quick_prayer/#demos"
+  },"156": {
+    "doc": "SLEEP",
+    "title": "SLEEP",
+    "content": "Pauses the script for the given number of milliseconds, or for a random amount of time within the given range. ",
+    "url": "/public-wiki-and-bugs/commands/sleep/",
+    
+    "relUrl": "/commands/sleep/"
+  },"157": {
+    "doc": "SLEEP",
+    "title": "Syntax",
+    "content": "SLEEP [Milliseconds|minMS] [maxMS] . | Milliseconds : If only a single parameter is supplied, the exact number of milliseconds to wait before continuing. | minMS : When two values are supplied to the sleep command, this is the minimum number of milliseconds that the script will pause before continuing. | maxMS : When two values are supplied to the sleep command, this is the maximum number of milliseconds that the script will pause before continuing. | . ",
+    "url": "/public-wiki-and-bugs/commands/sleep/#syntax",
+    
+    "relUrl": "/commands/sleep/#syntax"
+  },"158": {
+    "doc": "SLEEP",
+    "title": "Examples",
+    "content": "// Wait exactly 750 milliseconds every time SLEEP 750 // Wait for some time between half a second and 1.5 seconds SLEEP 500 1500 . ",
+    "url": "/public-wiki-and-bugs/commands/sleep/#examples",
+    
+    "relUrl": "/commands/sleep/#examples"
+  },"159": {
+    "doc": "SLEEP",
+    "title": "Notes",
+    "content": ". | 1000 ms == 1 second. 500ms == 0.5 seconds. | The average game tick is about 0.6 seconds (600ms), but this is not truly constant. Consider using the TICK command instead if your actions depend on accurate game ticks. | . ",
+    "url": "/public-wiki-and-bugs/commands/sleep/#notes",
+    
+    "relUrl": "/commands/sleep/#notes"
+  },"160": {
+    "doc": "SOUND_EFFECT",
+    "title": "SOUND_EFFECT",
+    "content": "When the specified sound effect starts, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/sound_effect/",
+    
+    "relUrl": "/triggers/sound_effect/"
+  },"161": {
+    "doc": "SOUND_EFFECT",
+    "title": "Syntax",
+    "content": "SOUND_EFFECT soundID . | soundID : The integer ID of a game sound. | . ",
+    "url": "/public-wiki-and-bugs/triggers/sound_effect/#syntax",
+    
+    "relUrl": "/triggers/sound_effect/#syntax"
+  },"162": {
+    "doc": "SOUND_EFFECT",
+    "title": "Notes",
+    "content": "Sound effects must be ON. The OSRS sound effects volume (the middle slider) must be set to at least 1% volume to use this trigger. ",
+    "url": "/public-wiki-and-bugs/triggers/sound_effect/#notes",
+    
+    "relUrl": "/triggers/sound_effect/#notes"
+  },"163": {
+    "doc": "SPECIAL",
+    "title": "SPECIAL",
+    "content": "Activates the special attack ability of the currently equipped weapon, if available. ",
+    "url": "/public-wiki-and-bugs/commands/special/",
+    
+    "relUrl": "/commands/special/"
+  },"164": {
+    "doc": "SPECIAL",
+    "title": "Syntax",
+    "content": "SPECIAL . | This command takes no arguments. | . ",
+    "url": "/public-wiki-and-bugs/commands/special/#syntax",
+    
+    "relUrl": "/commands/special/#syntax"
+  },"165": {
+    "doc": "SPECIAL",
+    "title": "Examples",
+    "content": "// Activate the special attack ability SPECIAL . ",
+    "url": "/public-wiki-and-bugs/commands/special/#examples",
+    
+    "relUrl": "/commands/special/#examples"
+  },"166": {
+    "doc": "SPECIAL",
+    "title": "Notes",
+    "content": ". | If the player’s equipped weapon has no special attack ability, this command will do nothing. | . ",
+    "url": "/public-wiki-and-bugs/commands/special/#notes",
+    
+    "relUrl": "/commands/special/#notes"
+  },"167": {
+    "doc": "SPECIAL",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/special/#demos",
+    
+    "relUrl": "/commands/special/#demos"
+  },"168": {
+    "doc": "SPELL",
+    "title": "SPELL",
+    "content": "Casts a magic spell on your current target, on an item or object by name, or enables left-click casting. ",
+    "url": "/public-wiki-and-bugs/commands/spell/",
+    
+    "relUrl": "/commands/spell/"
+  },"169": {
+    "doc": "SPELL",
+    "title": "Syntax",
+    "content": "SPELL_NAME 1|Item_Name|Item_ID|Game_Object_Name|Game_Object_ID . | 1 : Enables left-click casting for the specified spell. Lasts until the player switches weapons, or until another plugin changes this setting. | Item_Name : The string name of an item to cast the spell upon. When specifying items by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards. | Item_ID : The integer ID of an item to cast the spell upon. | Game_Object_Name : The string name of a game object to cast the spell upon. When specifying items by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards | Game_Object_ID : The integer ID of a game object to cast the spell upon. | . ",
+    "url": "/public-wiki-and-bugs/commands/spell/#syntax",
+    
+    "relUrl": "/commands/spell/#syntax"
+  },"170": {
+    "doc": "SPELL",
+    "title": "Examples",
+    "content": "// Enable left-click casting of Ice Barrage ICE_BARRAGE 1 // Cast high alchemy on all arrows in the player's inventory HIGH_LEVEL_ALCHEMY *arrows* // Automagically cast Fire Surge on the currently targeted NPC. FIRE_SURGE . ",
+    "url": "/public-wiki-and-bugs/commands/spell/#examples",
+    
+    "relUrl": "/commands/spell/#examples"
+  },"171": {
+    "doc": "SPELL",
+    "title": "Notes",
+    "content": ". | If the player does not have a target, this command will do nothing. See TARGET_SET for more information. | . ",
+    "url": "/public-wiki-and-bugs/commands/spell/#notes",
+    
+    "relUrl": "/commands/spell/#notes"
+  },"172": {
+    "doc": "SPELL",
+    "title": "Demos",
+    "content": "Left-click casting Fire Strike. Autocasting Fire Strike. High Level Alchemy. ",
+    "url": "/public-wiki-and-bugs/commands/spell/#demos",
+    
+    "relUrl": "/commands/spell/#demos"
+  },"173": {
+    "doc": "STAT",
+    "title": "STAT",
+    "content": "When the specified stat of the player moves below the specified level, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/stat/",
+    
+    "relUrl": "/triggers/stat/"
+  },"174": {
+    "doc": "STAT",
+    "title": "Syntax",
+    "content": "STAT Skill_Name Max_Level Min_Level . | Skill_Name : The string name of a skill, such as Attack or Herblore. | Max_Level : Trigger when the skill drops below this level. | Min_Level (Optional) : If specified, only trigger when the skill is between Max_Level and Min_level. | . ",
+    "url": "/public-wiki-and-bugs/triggers/stat/#syntax",
+    
+    "relUrl": "/triggers/stat/#syntax"
+  },"175": {
+    "doc": "STAT",
+    "title": "Examples",
+    "content": "// Trigger if the player's HP drops below 50 STAT HITPOINTS 50 . ",
+    "url": "/public-wiki-and-bugs/triggers/stat/#examples",
+    
+    "relUrl": "/triggers/stat/#examples"
+  },"176": {
+    "doc": "STAT",
+    "title": "Notes",
+    "content": ". | The order of Minimum and Maximum are reversed. | . ",
+    "url": "/public-wiki-and-bugs/triggers/stat/#notes",
+    
+    "relUrl": "/triggers/stat/#notes"
+  },"177": {
+    "doc": "STAT",
+    "title": "Demo",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/triggers/stat/#demo",
+    
+    "relUrl": "/triggers/stat/#demo"
+  },"178": {
+    "doc": "TARGET",
+    "title": "Syntax",
+    "content": "TARGET [MenuAction] . | MenuAction (Optional) : The integer value _MenuAction can be if the desired action is not the default action for that NPC (i.e., if it is not the left-click action). | . ",
+    "url": "/public-wiki-and-bugs/commands/target/#syntax",
+    
+    "relUrl": "/commands/target/#syntax"
+  },"179": {
+    "doc": "TARGET",
+    "title": "Examples",
+    "content": "TODO: TARGET examples . ",
+    "url": "/public-wiki-and-bugs/commands/target/#examples",
+    
+    "relUrl": "/commands/target/#examples"
+  },"180": {
+    "doc": "TARGET",
+    "title": "Notes",
+    "content": ". | If the player does not have a target, this command will do nothing. See TARGET_SET for more information. | . ",
+    "url": "/public-wiki-and-bugs/commands/target/#notes",
+    
+    "relUrl": "/commands/target/#notes"
+  },"181": {
+    "doc": "TARGET",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/target/#demos",
+    
+    "relUrl": "/commands/target/#demos"
+  },"182": {
+    "doc": "TARGET",
+    "title": "TARGET",
+    "content": " ",
+    "url": "/public-wiki-and-bugs/commands/target/",
+    
+    "relUrl": "/commands/target/"
+  },"183": {
+    "doc": "TARGET_SET",
+    "title": "TARGET_SET",
+    "content": "Sets the target to the specified NPC, regardless of closeness to the player. ",
+    "url": "/public-wiki-and-bugs/commands/target_set/",
+    
+    "relUrl": "/commands/target_set/"
+  },"184": {
+    "doc": "TARGET_SET",
+    "title": "Syntax",
+    "content": "TARGET_SET . | This tcommand does not take any arguments. | Must be used with NPC_SPAWN. | . ",
+    "url": "/public-wiki-and-bugs/commands/target_set/#syntax",
+    
+    "relUrl": "/commands/target_set/#syntax"
+  },"185": {
+    "doc": "TARGET_SET",
+    "title": "Notes",
+    "content": ". | Used to attack the specific spawn of an NPC (by ID) instead of the closest one. | . ",
+    "url": "/public-wiki-and-bugs/commands/target_set/#notes",
+    
+    "relUrl": "/commands/target_set/#notes"
+  },"186": {
+    "doc": "TARGET_UNSET",
+    "title": "TARGET_UNSET",
+    "content": "Unsets the current target player or NPC. ",
+    "url": "/public-wiki-and-bugs/commands/target_unset/",
+    
+    "relUrl": "/commands/target_unset/"
+  },"187": {
+    "doc": "TARGET_UNSET",
+    "title": "Syntax",
+    "content": "TARGET_UNSET . ",
+    "url": "/public-wiki-and-bugs/commands/target_unset/#syntax",
+    
+    "relUrl": "/commands/target_unset/#syntax"
+  },"188": {
+    "doc": "TARGET_UNSET",
+    "title": "Examples",
+    "content": " ",
+    "url": "/public-wiki-and-bugs/commands/target_unset/#examples",
+    
+    "relUrl": "/commands/target_unset/#examples"
+  },"189": {
+    "doc": "TARGET_UNSET",
+    "title": "Notes",
+    "content": ". | If the player does not have a target, this command will do nothing. See TARGET_SET for more information. | . ",
+    "url": "/public-wiki-and-bugs/commands/target_unset/#notes",
+    
+    "relUrl": "/commands/target_unset/#notes"
+  },"190": {
+    "doc": "TARGET_UNSET",
+    "title": "Demos",
+    "content": " ",
+    "url": "/public-wiki-and-bugs/commands/target_unset/#demos",
+    
+    "relUrl": "/commands/target_unset/#demos"
+  },"191": {
+    "doc": "TICK",
+    "title": "TICK",
+    "content": "This trigger hits once per game tick (approximately every 600ms). ",
+    "url": "/public-wiki-and-bugs/triggers/tick/",
+    
+    "relUrl": "/triggers/tick/"
+  },"192": {
+    "doc": "TICK",
+    "title": "Syntax",
+    "content": "TICK . ",
+    "url": "/public-wiki-and-bugs/triggers/tick/#syntax",
+    
+    "relUrl": "/triggers/tick/#syntax"
+  },"193": {
+    "doc": "Triggers",
+    "title": "Triggers in Kittykeys",
+    "content": "Triggers are the heart of automatic scripts. Using trighgers, a series of commands can run automatically after some event happens in-game. Kittykeys supports the following triggers as documented below. If you have any questions, please join the JumpIfZero Plugins Discord server, and we’ll be happy to help! . ",
+    "url": "/public-wiki-and-bugs/triggers#triggers-in-kittykeys",
+    
+    "relUrl": "/triggers#triggers-in-kittykeys"
+  },"194": {
+    "doc": "Triggers",
+    "title": "Supported Triggers",
+    "content": "As of version 1.7.2, Kittykeys supports the following triggers: . ",
+    "url": "/public-wiki-and-bugs/triggers#supported-triggers",
+    
+    "relUrl": "/triggers#supported-triggers"
+  },"195": {
+    "doc": "Triggers",
+    "title": "Triggers",
+    "content": "Hey, Listen! . This wiki is not complete (yet). Please refer to the Help tab in the Kittykeys Editor, or to the JZ Plugins Discord server, for the most up-to-date information. ",
+    "url": "/public-wiki-and-bugs/triggers",
+    
+    "relUrl": "/triggers"
+  },"196": {
+    "doc": "WALK_TARGET",
+    "title": "WALK_TARGET",
+    "content": "Walks under your target’s current location. ",
+    "url": "/public-wiki-and-bugs/commands/walk_target/",
+    
+    "relUrl": "/commands/walk_target/"
+  },"197": {
+    "doc": "WALK_TARGET",
+    "title": "Syntax",
+    "content": "WALK_TARGET . ",
+    "url": "/public-wiki-and-bugs/commands/walk_target/#syntax",
+    
+    "relUrl": "/commands/walk_target/#syntax"
+  },"198": {
+    "doc": "WALK_TARGET",
+    "title": "Examples",
+    "content": "// Walk under Hans, in Lumbridge TARGET_SET Hans WALK_TARGET . ",
+    "url": "/public-wiki-and-bugs/commands/walk_target/#examples",
+    
+    "relUrl": "/commands/walk_target/#examples"
+  },"199": {
+    "doc": "WALK_TARGET",
+    "title": "Notes",
+    "content": ". | If the player does not have a target, this command will do nothing. See TARGET_SET for more information. | . ",
+    "url": "/public-wiki-and-bugs/commands/walk_target/#notes",
+    
+    "relUrl": "/commands/walk_target/#notes"
+  },"200": {
+    "doc": "WALK_TARGET",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/walk_target/#demos",
+    
+    "relUrl": "/commands/walk_target/#demos"
+  },"201": {
+    "doc": "WIDGET_SPAWN",
+    "title": "WIDGET_SPAWN",
+    "content": "When the specified widget spawns for the player, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/widget_spawn/",
+    
+    "relUrl": "/triggers/widget_spawn/"
+  },"202": {
+    "doc": "WIDGET_SPAWN",
+    "title": "Syntax",
+    "content": "WIDGET_SPAWN Widget_ID . | Widget_ID : The integer ID of a game interface widget. | . ",
+    "url": "/public-wiki-and-bugs/triggers/widget_spawn/#syntax",
+    
+    "relUrl": "/triggers/widget_spawn/#syntax"
+  },"203": {
+    "doc": "WIDGET_SPAWN",
+    "title": "Examples",
+    "content": "// Triggers when the player's bank opens WIDGET_SPAWN 12 . ",
+    "url": "/public-wiki-and-bugs/triggers/widget_spawn/#examples",
+    
+    "relUrl": "/triggers/widget_spawn/#examples"
+  },"204": {
+    "doc": "WIDGET_SPAWN",
+    "title": "Notes",
+    "content": ". | Find Widget IDs by using Print events to chat in Kittykeys settings, or by using Dev Tools -&gt; Widgets, | Useful for various skilling and bankstanding. | . ",
+    "url": "/public-wiki-and-bugs/triggers/widget_spawn/#notes",
+    
+    "relUrl": "/triggers/widget_spawn/#notes"
+  },"205": {
+    "doc": "WIDGET_SPAWN",
+    "title": "Demo",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/triggers/widget_spawn/#demo",
+    
+    "relUrl": "/triggers/widget_spawn/#demo"
+  },"206": {
+    "doc": "WIELD",
+    "title": "WIELD",
+    "content": "Wields items from your inventory. ",
+    "url": "/public-wiki-and-bugs/commands/wield/",
+    
+    "relUrl": "/commands/wield/"
+  },"207": {
+    "doc": "WIELD",
+    "title": "Syntax",
+    "content": "WIELD Item_Name_1|Item_ID_1[,Item_Name_2|Item_ID_2,...] . | Item_Name : The string name of an item. When specifying items by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards. | Item_ID : The integer ID of an item. | . ",
+    "url": "/public-wiki-and-bugs/commands/wield/#syntax",
+    
+    "relUrl": "/commands/wield/#syntax"
+  },"208": {
+    "doc": "WIELD",
+    "title": "Examples",
+    "content": "// Put on any mystic robe pieces in the inventory WIELD *mystic* . ",
+    "url": "/public-wiki-and-bugs/commands/wield/#examples",
+    
+    "relUrl": "/commands/wield/#examples"
+  },"209": {
+    "doc": "WIELD",
+    "title": "Notes",
+    "content": ". | Generally, you should prefer items’ integer IDs, as they are more precise. However, in certain situations, using the item’s name with a wildcard is required. | . ",
+    "url": "/public-wiki-and-bugs/commands/wield/#notes",
+    
+    "relUrl": "/commands/wield/#notes"
+  },"210": {
+    "doc": "WIELD",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/wield/#demos",
+    
+    "relUrl": "/commands/wield/#demos"
+  },"211": {
+    "doc": "WITHDRAW",
+    "title": "WITHDRAW",
+    "content": "Withdraws the specified item(s) from your bank. ",
+    "url": "/public-wiki-and-bugs/commands/withdraw/",
+    
+    "relUrl": "/commands/withdraw/"
+  },"212": {
+    "doc": "WITHDRAW",
+    "title": "Syntax",
+    "content": "WITHDRAW Item_Name_1|Item_ID_1,[Item_Name_2|Ityem_ID_2,...] AMOUNT . ",
+    "url": "/public-wiki-and-bugs/commands/withdraw/#syntax",
+    
+    "relUrl": "/commands/withdraw/#syntax"
+  },"213": {
+    "doc": "WITHDRAW",
+    "title": "Examples",
+    "content": "// Withdraw 7 water runes WITHDRAW water_rune 7 // Withdraw 7 water runes and 7 air runes WITHDRAW water_rune,air_rune 7 . ",
+    "url": "/public-wiki-and-bugs/commands/withdraw/#examples",
+    
+    "relUrl": "/commands/withdraw/#examples"
+  },"214": {
+    "doc": "WITHDRAW",
+    "title": "Notes",
+    "content": ". | If multiple items are specifed, all will be withdrawn in the same quantity. Use multiple WITHDRAW commands to change the quantity of items. | . // BAD: This example would withdraw 6 logs and 6 tinderboxes WITHDRAW Oak_logs,Tinderbox 6 // GOOD: To change quantities, use another WITHDRAW command WITHDRAW Tinderbox 1 WITHDRAW Oak_logs 6 . ",
+    "url": "/public-wiki-and-bugs/commands/withdraw/#notes",
+    
+    "relUrl": "/commands/withdraw/#notes"
+  },"215": {
+    "doc": "WITHDRAW",
+    "title": "Demos",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/commands/withdraw/#demos",
+    
+    "relUrl": "/commands/withdraw/#demos"
+  },"216": {
+    "doc": "XP_DROP",
+    "title": "XP_DROP",
+    "content": "When the player receives an XP drop of at least the specified amount, this trigger is hit. ",
+    "url": "/public-wiki-and-bugs/triggers/xp_drop/",
+    
+    "relUrl": "/triggers/xp_drop/"
+  },"217": {
+    "doc": "XP_DROP",
+    "title": "Syntax",
+    "content": "XP_DROP Skill_Name Amount . | Skill_Name (Optional) : | Amount : Integer minimum amount of XP in one drop that should activate the trigger. | . ",
+    "url": "/public-wiki-and-bugs/triggers/xp_drop/#syntax",
+    
+    "relUrl": "/triggers/xp_drop/#syntax"
+  },"218": {
+    "doc": "XP_DROP",
+    "title": "Examples",
+    "content": "// This triggers when the player earns 65 magic XP or higher in one action XP_DROP Magic 65 // This triggers when the player earns 50+ Runecraft XP in one action, but not 0-49 XP_DROP Runecraft 50 // This triggers when the player earns 100+ XP in one action, regardless of the skill XP_DROP 100 . ",
+    "url": "/public-wiki-and-bugs/triggers/xp_drop/#examples",
+    
+    "relUrl": "/triggers/xp_drop/#examples"
+  },"219": {
+    "doc": "XP_DROP",
+    "title": "Notes",
+    "content": ". | The skill name is Runecraft, not Runecrafting. | . ",
+    "url": "/public-wiki-and-bugs/triggers/xp_drop/#notes",
+    
+    "relUrl": "/triggers/xp_drop/#notes"
+  },"220": {
+    "doc": "XP_DROP",
+    "title": "Demo",
+    "content": ". ",
+    "url": "/public-wiki-and-bugs/triggers/xp_drop/#demo",
+    
+    "relUrl": "/triggers/xp_drop/#demo"
+  }
+}
