@@ -57,8 +57,6 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "JumpIfZero Docs on GitHub":
-    - "https://github.com/JumpIfZero/public-wiki-and-bugs/"
   "JumpIfZero Plugins Discord":
     - "https://discord.gg/j6754fvqyn"
 
