@@ -13,7 +13,7 @@ _{{ page.description }}_
 ```java
 XP_DROP Skill_Name Amount
 ```
-- **`Skill_Name`** _(Optional)_ : 
+- **`Skill_Name`** _(Optional)_ : If specified, the name of the skill to watch for XP drops.
 - **`Amount`** : Integer minimum amount of XP in one drop that should activate the trigger.
 
 ## Examples 
