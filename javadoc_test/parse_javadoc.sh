@@ -1,26 +1,58 @@
 #!/bin/bash
 
-# initialize command_name variable to an empty string
-command_name=''
+# Define regular expressions to match the desired elements
+class_name_regex="^[A-Z_]+\s*$"
+param_regex="^\* @param\s+(\w+)\s+(\w+)"
+example_regex="^\*\s+@example\s+\{@code\s+(.*)\}"
 
-#!/bin/bash
+# Initialize variables
+class_desc=""
+declare -A params
+examples=()
 
+# Loop over the lines in the input file
 while IFS= read -r line; do
-    if [[ "$line" =~ ^([A-Z_]+) ]]; then
-        echo "# ${BASH_REMATCH[1]}"
-    elif [[ "$line" =~ ^\/\*\*$ ]]; then
-        echo ""
-        echo "${line:2:-2}"
-    elif [[ "$line" =~ ^\*\ @param[[:space:]]+(\w+)[[:space:]]+(required|optional)$ ]]; then
-        echo "- \`${BASH_REMATCH[1]}\` \(${BASH_REMATCH[2]}\): "
-    elif [[ "$line" =~ ^\*\ @param[[:space:]]+(\w+)[[:space:]]+(required|optional)[[:space:]]+(.*)$ ]]; then
-        echo "- \`${BASH_REMATCH[1]}\` \(${BASH_REMATCH[2]}\): ${BASH_REMATCH[3]# }"
-    elif [[ "$line" =~ ^\*\ @example\s+\{\@code\s+(.+)\}$ ]]; then
-        echo "#### Examples:"
-        echo "\`\`\`"
-        echo "${BASH_REMATCH[1]}"
-        echo "\`\`\`"
-    elif [[ "$line" =~ ^\* ]]; then
-        echo "${line:2}"
+  # If the line starts with /**, the next line contains the class description
+  if [[ $line =~ ^\/\*\*.*$ ]]; then
+    read -r class_desc
+    class_desc=$(echo "${class_desc}" | sed -E 's/^\*\s+//')
+  # If the line matches the class name regex, extract the class name
+  elif [[ $line =~ $class_name_regex ]]; then
+    class_name=$(echo "$line" | tr -d '[:space:]')
+  # If the line matches the param regex, extract the parameter name and description
+  elif [[ $line =~ $param_regex ]]; then
+    param_name=${BASH_REMATCH[1]}
+    param_required=$(echo "${BASH_REMATCH[2]}" | tr -d '\n' | sed 's/^[[:space:]]*//')
+    # Check if the parameter is required or optional
+    if echo "${param_required}" | grep -q -i -E "^required$"; then
+      param_required="Required"
+    elif echo "${param_required}" | grep -q -i -E "^optional$"; then
+      param_required="Optional"
+    else
+      param_required="Required"
     fi
-done < input.txt > output.md
+    # Read the next line as the parameter description
+    read -r param_desc_raw
+    param_desc=$(echo "$param_desc_raw" | sed -E 's/^\s+?\*\s+//g')
+
+    # Store the parameter name, required flag, and description in the "params" associative array
+    params["$param_name"]="$param_required|$param_desc"
+  # If the line matches the example regex, extract the example command and store it in an array
+  elif [[ $line =~ $example_regex ]]; then
+    examples+=("${BASH_REMATCH[1]}")
+  fi
+done <"input.txt"
+
+# Print the extracted information
+echo "Class name: $class_name"
+echo "Class description: $class_desc"
+echo ""
+echo "Parameters:"
+for param_name in "${!params[@]}"; do
+  echo "- $param_name ($param_required): $param_desc"
+done
+echo ""
+echo "Examples:"
+for example in "${!examples[@]}"; do
+  echo "- ${examples[example]}"
+done
