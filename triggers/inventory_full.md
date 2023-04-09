@@ -1,7 +1,6 @@
 ---
 title: INVENTORY_FULL
-description: When the player's inventory becomes full, this trigger is hit.
-
+description: Triggers when player inventory is full
 parent: Triggers
 ---
 
@@ -12,15 +11,19 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
+INVENTORY_FULL 
+```
+
+## Examples
+
+```java
 INVENTORY_FULL
 ```
 
-- This trigger takes no arguments.
-
 ## Notes
 
-- Useful for various skilling and bankstanding.
 
 ## Demos
 
-TODO: Demo?
+![](N/A)
+

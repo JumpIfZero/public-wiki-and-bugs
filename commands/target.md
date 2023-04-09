@@ -1,29 +1,31 @@
 ---
 title: TARGET
-description: Clicks or interacts with the player's current target.
-
+description: Clicks on your current target
 parent: Commands
---- 
+---
+
+# {{ page.title }}
+
+_{{ page.description }}_
 
 ## Syntax
 
-
 ```java
-TARGET [MenuAction]
-``` 
-- **`MenuAction`** _(Optional)_ : The integer value _MenuAction can be if the desired action is not the default action for that NPC (i.e., if it is not the left-click action). 
+TARGET [menuaction] 
+```
 
 ## Examples
 
-
-TODO: TARGET examples
+```java
+TARGET
+TARGET 11
+```
 
 ## Notes
 
-
-- If the player does not have a target, this command will do nothing. See **[TARGET_SET](target_set.md)** for more information.
+- To find menuaction, you can use kittykeys click logger
 
 ## Demos
 
- 
 ![](https://i.imgur.com/PEXvs0S.gif)
+

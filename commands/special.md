@@ -1,7 +1,6 @@
 ---
 title: SPECIAL
-description: Activates the special attack ability of the currently equipped weapon, if available.
-
+description: Activates special attack using special attack bar
 parent: Commands
 ---
 
@@ -11,26 +10,21 @@ _{{ page.description }}_
 
 ## Syntax
 
- 
 ```java
-SPECIAL
+SPECIAL [minEnergy] 
 ```
-- This command takes no arguments.
 
 ## Examples
 
-
 ```java
-// Activate the special attack ability
 SPECIAL
+SPECIAL 25
 ```
 
 ## Notes
 
 
-- If the player's equipped weapon has no special attack ability, this command will do nothing.
-
 ## Demos
 
-
 ![](https://i.imgur.com/uP3XM4S.gif)
+

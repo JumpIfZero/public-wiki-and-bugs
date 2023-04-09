@@ -1,36 +1,34 @@
-## NPC
-- Clicks on first NPC found. Optional menuaction can be used when for example thieving NPCs, leaving it out would try to attack it (usually left click option).
+---
+title: NPC
+description: Clicks on nearest NPC found
+parent: Commands
+---
 
+# {{ page.title }}
 
+_{{ page.description }}_
 
 ## Syntax
 
-
 ```java
-NPC NPC_ID_1 [MenuAction]
+NPC npc [menuaction] 
 ```
-
-- **`NPC_Name`** : The string name of an NPC. When specifying items by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards
-- **`NPC_ID`** : The integer ID of an NPC.
 
 ## Examples
 
-
 ```java
-// TODO: Examples
+NPC goblin
+NPC fishing_spot
+NPC perdu 11
+NPC 7730 9
 ```
 
 ## Notes
 
-
-- TODO: Notes
+- To find npcIDs, you can use kittykeys event logger or dev tools
+- To find menuaction, you can use kittykeys click logger
 
 ## Demos
 
+![](https://i.imgur.com/8G9ThTe.gif)
 
-TODO: Demos
-
-<!-- Use this format to embed images. Obviously, change the GIF URL -->
-![](https://example.com/demo.gif)
-
-<!-- Leave ONE blank line at the end of a file -->

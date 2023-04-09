@@ -135,4 +135,4 @@ compress_html:
   #   envs: all
 
 
-version: "1.7.2"
+version: "3.0.0"

@@ -1,7 +1,6 @@
 ---
 title: SOUND_EFFECT
-description: When the specified sound effect starts, this trigger is hit. 
-
+description: Triggers when sound effect is played
 parent: Triggers
 ---
 
@@ -10,14 +9,23 @@ parent: Triggers
 _{{ page.description }}_
 
 ## Syntax
-```java
-SOUND_EFFECT soundID
-```
--  **`soundID`** : The integer ID of a game sound.
 
-<!-- TODO: Support embedding video with sound -->
+```java
+SOUND_EFFECT soundID 
+```
+
+## Examples
+
+```java
+SOUND_EFFECT 2885
+SOUND_EFFECT 596,39,63
+```
 
 ## Notes
 
-{: .warning }
-Sound effects must be ON. The OSRS sound effects volume (the middle slider) must be set to at least 1% volume to use this trigger.
+{: .warning } You will need to have effect sounds at minimum of 1% volume to get sound triggers
+
+## Demos
+
+![](N/A)
+

@@ -1,7 +1,6 @@
 ---
 title: NPC_DESPAWN
-description: When the specified NPC despawns nearby, this trigger is hit.
-
+description: Triggers when NPC despawns
 parent: Triggers
 ---
 
@@ -10,23 +9,23 @@ parent: Triggers
 _{{ page.description }}_
 
 ## Syntax
-```java
-NPC_DESPAWN NPC_Name|NPC_ID
-```
 
-- **`NPC_Name`** : The string name of an NPC. When specifying an NPC by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards
-- **`NPC_ID`** : The integer ID of an NPC.
+```java
+NPC_DESPAWN npc 
+```
 
 ## Examples
 
 ```java
-NPC_DESPAWN Vet*
+NPC_DESPAWN cerberus
+NPC_DESPAWN 2790,2792
 ```
 
 ## Notes
 
-- If more than one of the same NPC are nearby, matches the closest NPC to the player.
+- To find npcIDs, you can use dev tools
 
-## Demo
+## Demos
 
-![](https://1.imgur.com/K17U2BS.gif)
+![](N/A)
+

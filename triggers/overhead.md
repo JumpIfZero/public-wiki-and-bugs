@@ -1,6 +1,6 @@
 ---
 title: OVERHEAD
-description: When target overhead changes, this trigger is hit.
+description: Triggers when target overhead changes
 parent: Triggers
 ---
 
@@ -11,37 +11,24 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-OVERHEAD Overheadname
+OVERHEAD overheadName 
 ```
-
-- **`OVERHEAD_NAME`** : The string name of an overhead. When specifying an overhead by name, use UPPERCASE with underscores instead of spaces, and do not use quotes.
-
 
 ## Examples
 
-TODO: Some examples
+```java
+OVERHEAD SOUL_SPLIT
+OVERHEAD MELEE
+OVERHEAD RANGED
+OVERHEAD MAGIC
+OVERHEAD REDEMPTION,SMITE,RETRIBUTION
+```
 
 ## Notes
 
-- Useful when making demonic gorilla swapper for example.
-
-- Possible values are:
-  - MELEE
-  - RANGED
-  - MAGIC
-  - RETRIBUTION
-  - SMITE
-  - REDEMPTION
-  - RANGE_MAGE
-  - RANGE_MELEE
-  - MAGE_MELEE
-  - RANGE_MAGE_MELEE
-  - WRATH
-  - SOUL_SPLIT
-  - DEFLECT_MELEE
-  - DEFLECT_RANGE
-  - DEFLECT_MAGE
+- To use this trigger, you must have active target selected
 
 ## Demos
 
-TODO: Demos?
+![](N/A)
+

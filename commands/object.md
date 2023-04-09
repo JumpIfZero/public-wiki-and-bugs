@@ -1,7 +1,6 @@
 ---
 title: OBJECT
-description: Clicks on the first instance of the specified game object, decoration object, or wall object nearby.
-
+description: Clicks on nearest object found
 parent: Commands
 ---
 
@@ -11,32 +10,26 @@ _{{ page.description }}_
 
 ## Syntax
 
-
 ```java
-OBJECT Object_ID [MenuAction]
+OBJECT object [menuaction] 
 ```
-
-- **`MenuAction`** _(Optional)_ : The integer value _MenuAction_ can be if the desired action is not the default action for that object (i.e., if it is not the left-click action). 
 
 ## Examples
 
-
 ```java
-// TODO: Examples
-
-// Game object (use Dev tools -> Objects)
-OBJECT 12308
-
-// Wall object (Use Dev tools -> Walls)
-OBJECT *vein*
+OBJECT bank_chest
+OBJECT *tree
+OBJECT 1235,5674
+OBJECT bank_booth 4
 ```
 
 ## Notes
 
-
-- TODO: Notes
+- To find objectIDs, you can use kittykeys event logger or dev tools
+- To find menuaction, you can use kittykeys click logger
+- Objects include game objects, wall objects, ground objects and decorative objects
 
 ## Demos
 
-
 ![](https://i.imgur.com/8G9ThTe.gif)
+

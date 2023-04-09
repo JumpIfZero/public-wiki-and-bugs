@@ -1,6 +1,6 @@
 ---
 title: ANIMATION_ANY
-description: When any nearby player or NPC performs the specified animation, this trigger is hit.
+description: Triggers when animation starts to display on any visible actor
 parent: Triggers
 ---
 
@@ -11,24 +11,21 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ANIMATION_ANY Animation_ID
+ANIMATION_ANY animationID 
 ```
-- **`Animation_ID`** : The integer ID of an animation.
 
 ## Examples
 
 ```java
-// Pray magic against Jad in the inferno Jad challenge
-ANIMATION_ANY 7592
-// Commands 
-Sleep 600 700
-PROTECT_FROM_MAGIC 1
+ANIMATION_ANY 104
+ANIMATION_ANY 505,506
 ```
 
 ## Notes
 
-- Useful for auto prayers.
+- To find animationIDs, you can use kittykeys event logger or dev tools
 
 ## Demos
 
-![](https://1.imgur.com/5h9rGHn.gif)
+![](https://i.imgur.com/5h9rGHn.gif)
+

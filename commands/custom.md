@@ -1,7 +1,6 @@
 ---
 title: CUSTOM
-description: Performs any action, even actions that are not natively supported by an exsisting command.
-
+description: Sends custom menuaction
 parent: Commands
 ---
 
@@ -12,30 +11,21 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-CUSTOM Lots of Required integers
+CUSTOM menuActionID identifier itemID param0 param1 
 ```
 
 ## Examples
 
-> I want to toggle run, but there's no `RUN` command!
+```java
+CUSTOM 57 1 -1 -1 10485787
+```
 
-0. Switch to the **Game chat** tab in OSRS
-1. Go to Kittykeys &rarr; Settings &rarr; Debug
-2. Enable **Print clicks to chat**
-3. Perform the desired action, and see which numbers Kittykeys prints to Game chat
-3. _(Optional)_ Disable **Print clicks to chat** to keep the chatbox clean 
-4. Enter every number as a parameter to the custom command
+## Notes
+
+{: .warning } Validity of the menuaction data IS NOT verified. Using this command is advanced method
+- To find custom action IDs, you can use kittykeys click logger
 
 ## Demos
 
- 
 ![](https://i.imgur.com/YbIhHM9.gif)
 
-
-## Notes
-- Every number printed for a given click is required. Separate each number with one space.
-
-{: .warning } 
-> CUSTOM will not work for actions where the identifiers or parameters will change, including any click on game objects, or if an inventory item moves to a different slot.
-> 
-> For actions that have have their own command (e.g., OBJECT or CONSUME), use the dedicated command instead.

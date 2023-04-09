@@ -1,7 +1,6 @@
 ---
 title: PICKUP
-description: Pick up an item from the ground.
-
+description: Picks up nearest item
 parent: Commands
 ---
 
@@ -11,24 +10,23 @@ _{{ page.description }}_
 
 ## Syntax
 
-
 ```java
-PICKUP [1]
+PICKUP itemID [telegrab] 
 ```
-- Use 1 to telegrab instead of picking up by walking.
 
 ## Examples
 
-
 ```java
-// Telegrab a jug
+PICKUP 1240
+PICKUP 1240,592,694,7098
+PICKUP 2426 1
 ```
+
 ## Notes
 
-
-- Use only with ITEM_SPAWN trigger.
+- To find itemIDs, you can use kittykeys event logger or dev tools
 
 ## Demos
 
- 
-![](https://i.imgur.com/UalPwFe.gif)
+![](N/A)
+

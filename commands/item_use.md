@@ -1,7 +1,6 @@
 ---
 title: ITEM_USE
-description: Combines the first occurrence of inventory item 1 with the first occurrence of inventory item.
-
+description: Combines inventory item one on inventory item two
 parent: Commands
 ---
 
@@ -12,26 +11,21 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ITEM_USE Item_Name_1|Item_ID_1 Item_Name_2|Item_ID_2
+ITEM_USE item1 item2 
 ```
-
-- **`Item_Name`** : The string name of an item. When specifying items by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards
-- **`Item_ID`** : The integer ID of an item.
 
 ## Examples
 
 ```java
-// Attach a stack of feathers to a stack of dart tips (any type)
-ITEM_USE Feather *Dart_tip*
-// This example specifically uses a feather on Adamant dart tips.
-// Remember: All integer IDs are unique!
-ITEM_USE Feather 823
+ITEM_USE feather *dart_tip
+ITEM_USE 13421 6032
 ```
 
-## Notes:
+## Notes
 
-- Generally, you should prefer items' integer IDs, as they are more precise. However, in certain situations, using the item's name with a wildcard is required.
+- To find itemIDs, you can use kittykeys event logger or dev tools
 
-## Demo:
+## Demos
 
 ![](https://i.imgur.com/7stedcZ.gif)
+

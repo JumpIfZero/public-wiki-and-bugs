@@ -1,7 +1,6 @@
 ---
 title: ITEM_SPAWN
-description: When item spawns on ground, this trigger is hit. , or using dev tools > ground items and getting the itemID from it.
-
+description: Triggers when item spawns
 parent: Triggers
 ---
 
@@ -12,18 +11,21 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ITEM_SPAWN ItemID
+ITEM_SPAWN item 
 ```
-
-- **`Item_ID`** : The integer ID of an item.
 
 ## Examples
 
 ```java
-// TODO: Examples
+ITEM_SPAWN 12819
+ITEM_SPAWN 12819,12849,59286
 ```
 
 ## Notes
 
-- Lookup item IDs by using **Print events to chat** in Kittykeys Settings, or by using Dev Tools -> Ground Items
-- Find item IDs online: https://chinplugins.xyz/items
+- To find itemIDs, you can use kittykeys event logger or dev tools
+
+## Demos
+
+![](https://i.imgur.com/UalPwFe.gif)
+

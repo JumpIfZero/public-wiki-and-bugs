@@ -1,7 +1,6 @@
 ---
 title: TICK
-description: This trigger hits once per game tick (approximately every 600ms).
-
+description: Triggers when game tick happens
 parent: Triggers
 ---
 
@@ -12,5 +11,20 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
+TICK 
+```
+
+## Examples
+
+```java
 TICK
 ```
+
+## Notes
+
+- This trigger runs roughly every 600 milliseconds
+
+## Demos
+
+![](https//i.imgur.com/PKwPwp1.gif)
+
