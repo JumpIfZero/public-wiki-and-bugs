@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 # Define regular expressions to match the desired elements
 class_name_regex="^[A-Z_]+\s*$"
 param_regex="^\* @param\s+(\w+)\s+(\w+)"
@@ -18,31 +16,9 @@ while IFS= read -r line; do
   if [[ $line =~ ^\/\*\*.*$ ]]; then
     read -r class_desc
     class_desc=$(echo "${class_desc}" | sed -E 's/^\*\s+//')
-  # If the line matches the class name regex, extract the class name and print the previously extracted information
+  # If the line matches the class name regex, extract the class name
   elif [[ $line =~ $class_name_regex ]]; then
-    if [[ -n $class_name ]]; then
-      # Print the extracted information for the previous class
-      echo "Class name: $class_name"
-      echo "Class description: $class_desc"
-      echo ""
-      echo "Parameters:"
-      for param_name in "${!params[@]}"; do
-        param_required=$(echo "${params[$param_name]}" | cut -d "|" -f 1)
-        param_desc=$(echo "${params[$param_name]}" | cut -d "|" -f 2)
-        echo "- $param_name ($param_required): $param_desc"
-      done
-      echo ""
-      echo "Examples:"
-      for example in "${examples[@]}"; do
-        echo "- $example"
-      done
-      echo ""
-    fi
-    # Reset variables for the new class
     class_name=$(echo "$line" | tr -d '[:space:]')
-    class_desc=""
-    params=()
-    examples=()
   # If the line matches the param regex, extract the parameter name and description
   elif [[ $line =~ $param_regex ]]; then
     param_name=${BASH_REMATCH[1]}
@@ -67,19 +43,16 @@ while IFS= read -r line; do
   fi
 done <"input.txt"
 
-# Print the extracted information for the last class
-
+# Print the extracted information
 echo "Class name: $class_name"
 echo "Class description: $class_desc"
 echo ""
 echo "Parameters:"
 for param_name in "${!params[@]}"; do
-  param_required=$(echo "${params[$param_name]}" | cut -d "|" -f 1)
-  param_desc=$(echo "${params[$param_name]}" | cut -d "|" -f 2)
   echo "- $param_name ($param_required): $param_desc"
 done
 echo ""
 echo "Examples:"
-for example in "${examples[@]}"; do
-  echo "- $example"
+for example in "${!examples[@]}"; do
+  echo "- ${examples[example]}"
 done
