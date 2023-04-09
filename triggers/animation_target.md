@@ -1,32 +1,32 @@
 ---
 title: ANIMATION_TARGET
-description: When the specified animation starts on the current TARGET player or NPC, this trigger is hit.
+description: Triggers when animation starts to display on your target
 parent: Triggers
 ---
 
 # {{ page.title }}
 
-*{{ page.description }}*
+_{{ page.description }}_
 
 ## Syntax
 
 ```java
-ANIMATION_TARGET Animation_ID
+ANIMATION_TARGET animationID 
 ```
-
-- **`Animation_ID`** : The integer ID of an animation.
 
 ## Examples
 
 ```java
-// TODO: Examples
+ANIMATION_TARGET 104
+ANIMATION_TARGET 705,599
 ```
 
 ## Notes
 
-- If the player does not have a target, this command will do nothing. See **[the TARGET_SET command](./commands.md#target_set)** for more information.
-- You can find an animation ID by using Kittykeys -> Settings -> Print events to chat, or by using Dev tools -> Player or NPCs (if using dev tools, _A_ holds the current animation ID).
+- To find animationIDs, you can use kittykeys event logger or dev tools
+- To use this trigger, you must have active target selected
 
 ## Demos
 
-TODO: Demo
+![](N/A)
+

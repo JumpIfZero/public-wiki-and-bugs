@@ -1,6 +1,6 @@
 ---
 title: HITSPLAT
-description: Triggers when a hitsplat lands on the player's current target.
+description: Triggers when hitsplat is applied on your target
 parent: Triggers
 ---
 
@@ -11,24 +11,21 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-HITSPLAT [Min_Value]
+HITSPLAT [value] 
 ```
--  **`Min_Value`** _(Optional)_ :  Only trigger when a hitsplat higher than the specified value lands on the target. If no value is specified, all hits (not 0) will activate the trigger.
 
 ## Examples
 
-```js 
-// Activate if any hitsplat lands on the target, except 0
+```java
 HITSPLAT
-// Activate only if a hitsplat of 5 or greater lands on the target
-HITSPLAT 5
+HITSPLAT 20
 ```
 
 ## Notes
 
-<!-- TODO: Pending suggestion 66, it could matter Soon(tm)... -->
-- The type of hitsplat (poison, venom, normal damage) does not matter.
+- To use this trigger, you must have active target selected
 
 ## Demos
 
 ![](https://1.imgur.com/7zBXxOt.gif)
+

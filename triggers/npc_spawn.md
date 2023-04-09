@@ -1,7 +1,6 @@
 ---
 title: NPC_SPAWN
-description: When the specified NPC spawn snearby, this trigger is hit.
-
+description: Triggers when NPC spawns
 parent: Triggers
 ---
 
@@ -12,23 +11,21 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-NPC_SPAWN NPC_Name|NPC_ID
+NPC_SPAWN npc 
 ```
 
-- **`NPC_Name`** : The string name of an NPC. When specifying an NPC by name, use underscores instead of spaces, and do not use quotes; in this mode, you can also use asterisks as wildcards
-- **`NPC_ID`** : The integer ID of an NPC.
+## Examples
 
-## Examples 
-
-```js
-NPC_SPAWN 6611
+```java
+NPC_SPAWN cerberus
+NPC_SPAWN 2790,2792
 ```
 
 ## Notes
 
-- Find NPC IDs using Dev Tools -> NPCs
-- Used with SET_TARGET for other commands
+- To find npcIDs, you can use dev tools
 
 ## Demos
 
-TODO: Demo
+![](N/A)
+

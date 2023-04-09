@@ -1,27 +1,33 @@
-## UNEQUIP
+---
+title: UNEQUIP
+description: Unequips gear from equipment tab
+parent: Commands
+---
+
+# {{ page.title }}
+
+_{{ page.description }}_
 
 ## Syntax
 
-
 ```java
-UNEQUIP Item_Name_1|Item_ID_1 - Unequips gear from equipment tab. 
+UNEQUIP item 
 ```
 
 ## Examples
 
-
 ```java
-// Unequip a set of mystic robes
-UNEQUIP *mystic*
-
-// Unequip any ring
-UNEQUIP *ring*
+UNEQUIP 20997,11864
+UNEQUIP armadyl_godsword
+UNEQUIP *ancestral*
+UNEQUIP *wand*,*staff*
 ```
 
 ## Notes
 
+- To find itemIDs, you can use kittykeys event logger or dev tools
 
 ## Demos
 
- 
 ![](https://i.imgur.com/4Xqs5Zy.gif)
+

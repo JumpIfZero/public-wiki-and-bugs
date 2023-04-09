@@ -1,32 +1,31 @@
 ---
 title: ANIMATION_SELF
-description: When the specified animation starts on the player, this trigger is hit.
+description: Triggers when animation starts to display on yourself
 parent: Triggers
 ---
 
 # {{ page.title }}
 
-*{{ page.description }}*
+_{{ page.description }}_
 
 ## Syntax
 
 ```java
-ANIMATION_SELF Animation_ID
+ANIMATION_SELF animationID 
 ```
-
-- **`Animation_ID`** : The integer ID of an animation.
 
 ## Examples
 
 ```java
-// Trigger when the player digs with a spade
-ANIMATION_SELF 830
+ANIMATION_SELF 848
+ANIMATION_SELF 49,56
 ```
 
 ## Notes
 
--  To find an animation ID, use Kittykeys -> Settings -> Print events to chat. Animation IDs are also shown with Dev tools -> Players or NPCs (if using dev tools, _A_ holds the current animation ID).
+- To find animationIDs, you can use kittykeys event logger or dev tools
 
 ## Demos
 
 ![](https://1.imgur.com/fiC1nS2.gif)
+

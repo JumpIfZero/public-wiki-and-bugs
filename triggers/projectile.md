@@ -1,6 +1,6 @@
 ---
 title: PROJECTILE
-description: When projectile with the specified ID spawns, this trigger is hit.
+description: Triggers when projectile is spawned
 parent: Triggers
 ---
 
@@ -11,18 +11,21 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PROJECTILE Projectile_ID
+PROJECTILE projectileID 
 ```
-- **`Projectile_ID`** : The integer ID of a projectile.
 
 ## Examples
 
-TODO: Add examples
+```java
+PROJECTILE 2948
+PROJECTILE 2948,2949,2950
+```
 
 ## Notes
 
-- You can find a projectile ID by using Kittykeys -> Settings -> Print events to chat, or by using Dev tools -> Projectiles
+- To find projectileIDs, you can use kittykeys event logger or dev tools
 
-## Demo
+## Demos
 
-TODO: Demo
+![](https://i.imgur.com/HBuhElf.gif)
+

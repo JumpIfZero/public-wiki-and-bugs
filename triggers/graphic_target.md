@@ -1,6 +1,6 @@
 ---
 title: GRAPHIC_TARGET
-description: Triggers when the specified graphic is rendered on the current target.
+description: Triggers when graphic is starting to render on your target
 parent: Triggers
 ---
 
@@ -11,20 +11,22 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-GRAPHIC_TARGET Graphic_ID_1[,Graphic_ID_2]
+GRAPHIC_TARGET graphicID 
 ```
--  Graphic_ID 
 
-## Examples 
+## Examples
+
 ```java
-// Graphic 264 is used when the player casts bloom with a silver sickle (b)
-GRAPHIC_TARGET 264
+GRAPHIC_TARGET 85
+GRAPHIC_TARGET 4025,694
 ```
 
 ## Notes
 
-- You can find an ID by using Kittykeys -> Settings -> Print events to chat, or by using Dev tools -> NPC or Player (if using dev tools, _G_ holds the current graphic ID).
+- To find graphicIDs, you can use kittykeys event logger or dev tools
+- To use this trigger, you must have active target selected
 
 ## Demos
 
-![](https://1.imgur.com/rgxOSkK.gif)
+![](N/A)
+

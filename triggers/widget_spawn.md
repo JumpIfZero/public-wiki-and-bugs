@@ -1,7 +1,6 @@
 ---
 title: WIDGET_SPAWN
-description: When the specified widget spawns for the player, this trigger is hit.
-
+description: Triggers when widget spawns
 parent: Triggers
 ---
 
@@ -12,24 +11,21 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-WIDGET_SPAWN Widget_ID
+WIDGET_SPAWN widgetID 
 ```
 
-- **`Widget_ID`** : The integer ID of a game interface widget.
-
-## Examples 
+## Examples
 
 ```java
-// Triggers when the player's bank opens
 WIDGET_SPAWN 12
+WIDGET_SPAWN 421,428,511
 ```
 
 ## Notes
 
-- Find Widget IDs by using **Print events to chat** in Kittykeys settings, or by using Dev Tools -> Widgets,
-- Useful for various skilling and bankstanding.
+- To find widgetIDs, you can use kittykeys event logger or dev tools widget inspector
 
-## Demo
+## Demos
 
-![](https://1.imgur.com/ILx7jl6.gif)
+![](https://1.imgur.com/ILx7jl6.gi)
 

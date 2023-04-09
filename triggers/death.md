@@ -1,6 +1,6 @@
 ---
 title: DEATH
-description: When the player dies, this trigger is hit.
+description: Triggers when you die
 parent: Triggers
 ---
 
@@ -11,21 +11,19 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-DEATH
+DEATH 
 ```
-
-- This trigger takes no arguments.
 
 ## Examples
 
 ```java
-// TODO: Examples of death trigger?
+DEATH
 ```
 
 ## Notes
 
-- F :')
 
 ## Demos
 
-TODO: Demo of death trigger?
+![](N/A)
+

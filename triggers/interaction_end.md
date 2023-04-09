@@ -1,7 +1,6 @@
 ---
 title: INTERACTION_END
-description: When player interaction ends (returns to null), this trigger is hit.
-
+description: Triggers when interaction ends
 parent: Triggers
 ---
 
@@ -10,8 +9,21 @@ parent: Triggers
 _{{ page.description }}_
 
 ## Syntax
+
+```java
+INTERACTION_END 
+```
+
+## Examples
+
 ```java
 INTERACTION_END
 ```
 
-- This trigger takes no arguments.
+## Notes
+
+
+## Demos
+
+![](N/A)
+

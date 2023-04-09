@@ -1,7 +1,6 @@
 ---
 title: TARGET_UNSET
-description: Unsets the current target player or NPC.
-
+description: Unsets your current target
 parent: Commands
 ---
 
@@ -12,14 +11,19 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-TARGET_UNSET
+TARGET_UNSET 
 ```
 
 ## Examples
 
+```java
+TARGET_UNSET
+```
+
 ## Notes
 
 
-- If the player does not have a target, this command will do nothing. See **[TARGET_SET](target_set.md)** for more information.
-
 ## Demos
+
+![](N/A)
+
