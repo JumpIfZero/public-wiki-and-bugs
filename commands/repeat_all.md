@@ -22,7 +22,8 @@ REPEAT_ALL
 
 ## Notes
 
-{: .warning } This command will repeat the script infinitely, you will need to abort it to stop execution
+{: .warning }
+This command will repeat the script infinitely, you will need to abort it to stop execution
 
 ## Demos
 

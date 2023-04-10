@@ -22,7 +22,8 @@ ABORT_ALL
 
 ## Notes
 
-{: .warning } Aborting running scripts may have undetermined behavior. Some scripts may run till completion, while others may stop instantly
+{: .warning }
+Aborting running scripts may have undetermined behavior. Some scripts may run till completion, while others may stop instantly
 
 ## Demos
 

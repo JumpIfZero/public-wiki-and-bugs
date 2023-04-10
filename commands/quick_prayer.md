@@ -23,7 +23,8 @@ QUICK_PRAYER
 
 ## Notes
 
-{: .warning } Quick prayers must have been set previously
+{: .warning }
+Quick prayers must have been set previously
 
 ## Demos
 

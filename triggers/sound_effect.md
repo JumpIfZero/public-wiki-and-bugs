@@ -23,7 +23,8 @@ SOUND_EFFECT 596,39,63
 
 ## Notes
 
-{: .warning } You will need to have effect sounds at minimum of 1% volume to get sound triggers
+{: .warning }
+You will need to have effect sounds at minimum of 1% volume to get sound triggers
 
 ## Demos
 
