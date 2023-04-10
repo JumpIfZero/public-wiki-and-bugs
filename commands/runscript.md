@@ -11,7 +11,7 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-RUNSCRIPT scriptName 
+RUNSCRIPT scriptName [scriptAmount] 
 ```
 
 ## Examples
@@ -19,6 +19,7 @@ RUNSCRIPT scriptName
 ```java
 RUNSCRIPT pureMageGear
 RUNSCRIPT mainRangeGear
+RUNSCRIPT makePotion 9
 ```
 
 ## Notes
