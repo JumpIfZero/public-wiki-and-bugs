@@ -11,7 +11,7 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PLAYER_SPAWN player 
+PLAYER_SPAWN player [minLevel] [maxLevel] 
 ```
 
 ## Examples
@@ -19,6 +19,7 @@ PLAYER_SPAWN player
 ```java
 PLAYER_SPAWN *
 PLAYER_SPAWN myMule123
+PLAYER_SPAWN * 116 126
 ```
 
 ## Notes

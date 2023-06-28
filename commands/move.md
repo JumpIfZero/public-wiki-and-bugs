@@ -26,5 +26,5 @@ MOVE -5 -5 2
 
 ## Demos
 
-![](https://i.imgur.com/tl9EtDV.gi)
+![](https://i.imgur.com/tl9EtDV.gif)
 

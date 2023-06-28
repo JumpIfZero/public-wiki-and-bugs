@@ -1,6 +1,6 @@
 ---
 title: NPC
-description: Clicks on nearest NPC found
+description: Clicks on nearest NPC found that is not already dead
 parent: Commands
 ---
 
