@@ -29,5 +29,5 @@ NPC_DESPAWN 2790,2792
 
 ## Demos
 
-![](https://i.imgur.com/Cdswh4X.mp4)
+![](https://i.imgur.com/cjps85j.gif)
 

@@ -35,5 +35,5 @@ OBJECT bank_booth 4
 
 ## Demos
 
-![](https://i.imgur.com/RU94ucG.mp4)
+![](https://i.imgur.com/aofxH3q.gif)
 

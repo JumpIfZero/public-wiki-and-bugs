@@ -29,5 +29,5 @@ ENERGY 60 40
 
 ## Demos
 
-![](https://i.imgur.com/H33Z5rV.mp4)
+![](https://i.imgur.com/PhD3tCH.gif)
 

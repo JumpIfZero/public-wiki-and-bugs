@@ -30,5 +30,5 @@ ANIMATION_TARGET 705,599
 
 ## Demos
 
-![](https://i.imgur.com/AhuOhIs.mp4)
+![](https://i.imgur.com/yADqn7H.gif)
 

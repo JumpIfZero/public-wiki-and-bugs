@@ -30,5 +30,5 @@ SCENE_WALK 3216 3416 3
 
 ## Demos
 
-![](https://i.imgur.com/ceNFYk6.mp4)
+![](https://i.imgur.com/vB1t5bx.gif)
 

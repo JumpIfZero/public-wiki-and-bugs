@@ -30,5 +30,5 @@ TARGET_GEAR_CHANGED *wand*,*staff*
 
 ## Demos
 
-![](https://i.imgur.com/946biD2.mp4)
+![](N/A)
 

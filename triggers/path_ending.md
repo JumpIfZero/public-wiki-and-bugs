@@ -11,7 +11,8 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PATH_ENDING ```
+PATH_ENDING 
+```
 
 ## Examples
 
@@ -24,5 +25,5 @@ PATH_ENDING
 
 ## Demos
 
-![](https://i.imgur.com/W4W5hJg.mp4)
+![](https://i.imgur.com/WX0ki5H.gif)
 

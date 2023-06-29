@@ -29,5 +29,6 @@ NPC_SPAWN 2790,2792
 
 ## Demos
 
-![](https://i.imgur.com/2USp9oo.mp4)
+![](https://i.imgur.com/a95ww64.gif)
+![](https://i.imgur.com/LBjQM9Y.gif)
 

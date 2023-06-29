@@ -34,5 +34,5 @@ NPC 7730 9
 
 ## Demos
 
-![](https://i.imgur.com/pd5Dc18.mp4)
+![](https://i.imgur.com/nJNYsdI.gif)
 

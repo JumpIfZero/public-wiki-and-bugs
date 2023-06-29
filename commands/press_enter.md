@@ -11,7 +11,8 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PRESS_ENTER ```
+PRESS_ENTER 
+```
 
 ## Examples
 

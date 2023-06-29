@@ -11,7 +11,8 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-REPEAT_ALL ```
+REPEAT_ALL 
+```
 
 ## Examples
 

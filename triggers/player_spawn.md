@@ -32,5 +32,5 @@ PLAYER_SPAWN * 116 126
 ## Demos
 
 ![](https://1.imgur.com/r9HCGZe.gif)
-![](https://i.imgur.com/IlYMD5W.mp4)
+![](https://i.imgur.com/jeB9Exf.gif)
 

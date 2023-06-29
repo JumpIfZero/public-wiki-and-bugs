@@ -11,7 +11,8 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-LOGOUT ```
+LOGOUT 
+```
 
 ## Examples
 

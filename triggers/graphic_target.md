@@ -30,5 +30,5 @@ GRAPHIC_TARGET 4025,694
 
 ## Demos
 
-![](https://i.imgur.com/QcbQ7St.mp4)
+![](https://i.imgur.com/87QpKFj.gif)
 

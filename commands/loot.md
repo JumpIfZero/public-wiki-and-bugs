@@ -29,5 +29,5 @@ LOOT 10000 20000
 
 ## Demos
 
-![](https://i.imgur.com/tDhyhno.mp4)
+![](https://i.imgur.com/M7JS0qp.gif)
 

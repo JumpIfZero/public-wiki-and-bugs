@@ -11,7 +11,8 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-MOVING ```
+MOVING 
+```
 
 ## Examples
 
@@ -24,5 +25,5 @@ MOVING
 
 ## Demos
 
-![](https://i.imgur.com/iYLiCg4.mp4)
+![](https://i.imgur.com/WX0ki5H.gif)
 

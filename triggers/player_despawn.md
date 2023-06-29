@@ -28,5 +28,5 @@ PLAYER_DESPAWN myMule123
 
 ## Demos
 
-![](https://i.imgur.com/IlYMD5W.mp4)
+![](https://i.imgur.com/jeB9Exf.gif)
 

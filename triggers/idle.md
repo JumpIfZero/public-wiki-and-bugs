@@ -30,5 +30,5 @@ IDLE 5000 9000
 
 ## Demos
 
-![](https://i.imgur.com/nL0Ghw3.mp4)
+![](https://i.imgur.com/t0EoMBt.gif)
 

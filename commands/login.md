@@ -29,5 +29,5 @@ LOGIN jzmain ilovecats
 
 ## Demos
 
-![](https://i.imgur.com/gSOUBX3.mp4)
+![](https://i.imgur.com/ML9gFK6.gif)
 
