@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-LOOT    minValue [maxValue] 
+LOOT minValue [maxValue] 
 
 minValue - Mimimum stack value
 maxValue - Maximum stack value
-
 ```
 
 ## Examples

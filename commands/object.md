@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-OBJECT    object [menuaction] 
+OBJECT object [menuaction] 
 
 object - ObjectName1/ObjectID1,ObjectName2/ObjectID2, ..., ObjectNameN/ObjectIDN
 menuaction - MenuActionID - leaving menuaction out will default to GAME_OBJECT_FIRST_OPTION (3)
-
 ```
 
 ## Examples

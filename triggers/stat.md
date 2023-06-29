@@ -11,12 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-STAT    skillName maxLevel [minLevel] 
+STAT skillName maxLevel [minLevel] 
 
 skillName - Fully qualified skill name as seen ingame
 maxLevel - Maximum level to consider valid for this trigger
 minLevel - Minimum level to consider valid for this trigger
-
 ```
 
 ## Examples

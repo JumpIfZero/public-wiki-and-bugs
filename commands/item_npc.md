@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ITEM_NPC    item 
+ITEM_NPC item 
 
 item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
-
 ```
 
 ## Examples

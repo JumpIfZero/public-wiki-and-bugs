@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-WALK_TARGET    [x] [y] 
+WALK_TARGET [x] [y] 
 
 x - Number of tiles away from target x-axis, can be negative
 y - Number of tiles away from target y-axis, can be negative
-
 ```
 
 ## Examples

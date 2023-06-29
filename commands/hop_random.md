@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-HOP_RANDOM    subscriptionType 
+HOP_RANDOM subscriptionType 
 
 subscriptionType - 0 = F2P only, 1 = P2P only
-
 ```
 
 ## Examples

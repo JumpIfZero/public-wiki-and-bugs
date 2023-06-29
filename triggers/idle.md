@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-IDLE    [minMs] [maxMs] 
+IDLE [minMs] [maxMs] 
 
 minMs - Minimum milliseconds to stay in idle before trigger is valid
 maxMs - Maximum milliseconds to stay in idle before trigger is valid - leaving maxMS out will idle exactly for minMS
-
 ```
 
 ## Examples

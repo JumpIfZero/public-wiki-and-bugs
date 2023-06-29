@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-WIELD    item 
+WIELD item 
 
 item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
-
 ```
 
 ## Examples

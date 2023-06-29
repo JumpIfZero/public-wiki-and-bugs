@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PLAY_SOUND    soundID 
+PLAY_SOUND soundID 
 
 soundID - Sound to play
-
 ```
 
 ## Examples

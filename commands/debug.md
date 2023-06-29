@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-DEBUG    message 
+DEBUG message 
 
 message - Message to add into game chat
-
 ```
 
 ## Examples

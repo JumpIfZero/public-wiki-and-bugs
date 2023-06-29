@@ -11,10 +11,7 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-MOVING    
-
-
-```
+MOVING ```
 
 ## Examples
 

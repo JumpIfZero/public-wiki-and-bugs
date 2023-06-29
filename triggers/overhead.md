@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-OVERHEAD    overheadName 
+OVERHEAD overheadName 
 
 overheadName - OverheadName1,OverheadName2, ..., OverheadNameN
-
 ```
 
 ## Examples

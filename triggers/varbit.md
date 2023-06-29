@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-VARBIT    varbitID value 
+VARBIT varbitID value 
 
 varbitID - varbit number
 value - Minimum value to consider valid for this trigger
-
 ```
 
 ## Examples

@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-NPC    npc [menuaction] 
+NPC npc [menuaction] 
 
 npc - NpcID1/NpcName1,NpcID2/NpcName2, ..., NpcIDN/NpcNameN
 menuaction - MenuActionID - leaving menuaction out will default to NPC_SECOND_OPTION (10)
-
 ```
 
 ## Examples

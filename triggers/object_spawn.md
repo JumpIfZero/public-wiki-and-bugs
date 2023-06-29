@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-OBJECT_SPAWN    object 
+OBJECT_SPAWN object 
 
 object - ObjectName1/ObjectID1,ObjectName2/ObjectID2, ..., ObjectNameN/ObjectIDN
-
 ```
 
 ## Examples

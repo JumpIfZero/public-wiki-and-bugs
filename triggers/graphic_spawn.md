@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-GRAPHIC_SPAWN    graphicsObject 
+GRAPHIC_SPAWN graphicsObject 
 
 graphicsObject - GraphicsObjectName1/GraphicsObjectID1,GraphicsObjectName2/GraphicsObjectID2, ..., GraphicsObjectNameN/GraphicsObjectIDN
-
 ```
 
 ## Examples

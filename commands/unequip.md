@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-UNEQUIP    item 
+UNEQUIP item 
 
 item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
-
 ```
 
 ## Examples

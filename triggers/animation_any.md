@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ANIMATION_ANY    animationID 
+ANIMATION_ANY animationID 
 
 animationID - AnimationID1,AnimationID2, ..., AnimationIDN
-
 ```
 
 ## Examples

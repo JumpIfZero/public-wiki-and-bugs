@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ENERGY    maxLevel [minLevel] 
+ENERGY maxLevel [minLevel] 
 
 maxLevel - Maximum level to consider valid for this trigger
 minLevel - Minimum level to consider valid for this trigger
-
 ```
 
 ## Examples

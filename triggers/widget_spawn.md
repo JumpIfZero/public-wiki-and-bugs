@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-WIDGET_SPAWN    widgetID 
+WIDGET_SPAWN widgetID 
 
 widgetID - WidgetID1,WidgetID2, ..., WidgetIDN
-
 ```
 
 ## Examples

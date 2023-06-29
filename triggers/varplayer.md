@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-VARPLAYER    varplayerID value 
+VARPLAYER varplayerID value 
 
 varplayerID - varplayer number
 value - Minimum value to consider valid for this trigger
-
 ```
 
 ## Examples

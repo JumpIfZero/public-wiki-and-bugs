@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-SPECIAL    [minEnergy] 
+SPECIAL [minEnergy] 
 
 minEnergy - Minimum special attack energy required
-
 ```
 
 ## Examples

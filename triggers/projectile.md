@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PROJECTILE    projectileID 
+PROJECTILE projectileID 
 
 projectileID - ProjectileID1,ProjectileID2, ..., ProjectileIDN
-
 ```
 
 ## Examples

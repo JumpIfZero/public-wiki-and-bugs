@@ -11,10 +11,7 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-INVENTORY_FULL    
-
-
-```
+INVENTORY_FULL ```
 
 ## Examples
 

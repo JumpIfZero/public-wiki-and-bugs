@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PICKUP    itemID [telegrab] 
+PICKUP itemID [telegrab] 
 
 itemID - ItemID1,ItemID2, ..., ItemIDN
 telegrab - 1 = telegrab instead of walking
-
 ```
 
 ## Examples

@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-INVENTORY_CONTAINS    item 
+INVENTORY_CONTAINS item 
 
 item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
-
 ```
 
 ## Examples

@@ -11,10 +11,7 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-TARGET_SET    
-
-
-```
+TARGET_SET ```
 
 ## Examples
 

@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-TOGGLESCRIPT    scriptName [clickMode] 
+TOGGLESCRIPT scriptName [clickMode] 
 
 scriptName - Existing script name, case sensitive exact match
 clickMode - 0 = OFF, 1 = ON, leaving clickMode out will always click
-
 ```
 
 ## Examples

@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-OBJECT_DESPAWN    object 
+OBJECT_DESPAWN object 
 
 object - ObjectName1/ObjectID1,ObjectName2/ObjectID2, ..., ObjectNameN/ObjectIDN
-
 ```
 
 ## Examples

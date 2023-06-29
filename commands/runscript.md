@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-RUNSCRIPT    scriptName [scriptAmount] 
+RUNSCRIPT scriptName [scriptAmount] 
 
 scriptName - Existing script name, case sensitive exact match
 scriptAmount - Number of script instances to launch
-
 ```
 
 ## Examples

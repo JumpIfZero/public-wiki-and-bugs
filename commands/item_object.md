@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ITEM_OBJECT    item object 
+ITEM_OBJECT item object 
 
 item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
 object - ObjectName1/ObjectID1,ObjectName2/ObjectID2, ..., ObjectNameN/ObjectIDN
-
 ```
 
 ## Examples

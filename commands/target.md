@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-TARGET    [menuaction] 
+TARGET [menuaction] 
 
 menuaction - MenuActionID - leaving menuaction out will default to NPC_SECOND_OPTION (10) for npcs and PLAYER_SECOND_OPTION (45) for players
-
 ```
 
 ## Examples

@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-HOP    worldID 
+HOP worldID 
 
 worldID - World number to hop into
-
 ```
 
 ## Examples

@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-TYPE    content 
+TYPE content 
 
 content - Message to type
-
 ```
 
 ## Examples

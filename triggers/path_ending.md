@@ -11,10 +11,7 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PATH_ENDING    
-
-
-```
+PATH_ENDING ```
 
 ## Examples
 

@@ -11,12 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PLAYER_SPAWN    player [minLevel] [maxLevel] 
+PLAYER_SPAWN player [minLevel] [maxLevel] 
 
 player - Player name
 minLevel - Minimum combat level
 maxLevel - Maximum combat level
-
 ```
 
 ## Examples

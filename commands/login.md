@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-LOGIN    username password 
+LOGIN username password 
 
 username - Username to enter
 password - Password to enter
-
 ```
 
 ## Examples

@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PLAYER_DESPAWN    player 
+PLAYER_DESPAWN player 
 
 player - Player name
-
 ```
 
 ## Examples

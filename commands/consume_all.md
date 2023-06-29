@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-CONSUME_ALL    item [id] 
+CONSUME_ALL item [id] 
 
 item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
 id - Identifier / menu item to click
-
 ```
 
 ## Examples

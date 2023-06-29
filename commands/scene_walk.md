@@ -11,12 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-SCENE_WALK    x y [accuracy] 
+SCENE_WALK x y [accuracy] 
 
 x - World coordinate X
 y - World coordinate Y
 accuracy - Determines how accurately this world point should be clicked - unit is tiles, higher number means less accurate
-
 ```
 
 ## Examples

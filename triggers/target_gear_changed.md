@@ -11,10 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-TARGET_GEAR_CHANGED    item 
+TARGET_GEAR_CHANGED item 
 
 item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
-
 ```
 
 ## Examples

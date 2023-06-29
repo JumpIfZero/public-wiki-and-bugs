@@ -11,12 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-MOVE_TARGET    x y [accuracy] 
+MOVE_TARGET x y [accuracy] 
 
 x - Number of tiles away from target x-axis, can be negative
 y - Number of tiles away from target y-axis, can be negative
 accuracy - Determines how accurately x/y point should be clicked - unit is tiles, higher number means less accurate
-
 ```
 
 ## Examples

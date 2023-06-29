@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-MESSAGE    type message 
+MESSAGE type message 
 
 type - Message type ID, usually 4 (ENGINE) - @see <a href="https://github.com/runelite/runelite/blob/master/runelite-api/src/main/java/net/runelite/api/ChatMessageType.java">ChatMessageType</a>
 message - Message to match for this trigger
-
 ```
 
 ## Examples

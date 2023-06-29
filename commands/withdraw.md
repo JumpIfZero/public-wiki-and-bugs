@@ -11,11 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-WITHDRAW    item [quantity] 
+WITHDRAW item [quantity] 
 
 item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
 quantity - Leaving quantity out will withdraw all
-
 ```
 
 ## Examples

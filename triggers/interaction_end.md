@@ -11,10 +11,7 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-INTERACTION_END    
-
-
-```
+INTERACTION_END ```
 
 ## Examples
 
