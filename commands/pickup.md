@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PICKUP itemID [telegrab] 
+PICKUP    itemID [telegrab] 
+
+itemID - ItemID1,ItemID2, ..., ItemIDN
+telegrab - 1 = telegrab instead of walking
+
 ```
 
 ## Examples
@@ -24,9 +28,9 @@ PICKUP 2426 1
 
 ## Notes
 
-- To find itemIDs, you can use kittykeys event logger or dev tools
+- To find itemIDs, you can use kittykeys debug tab or dev tools
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/O9RtpmI.gif)
 

@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-WIDGET_SPAWN widgetID 
+WIDGET_SPAWN    widgetID 
+
+widgetID - WidgetID1,WidgetID2, ..., WidgetIDN
+
 ```
 
 ## Examples
@@ -23,9 +26,10 @@ WIDGET_SPAWN 421,428,511
 
 ## Notes
 
-- To find widgetIDs, you can use kittykeys event logger or dev tools widget inspector
+- To find widgetIDs, you can use kittykeys debug tab or dev tools widget inspector
 
 ## Demos
 
-![](https://1.imgur.com/ILx7jl6.gi)
+![](https://1.imgur.com/ILx7jl6.gif)
+![](https://i.imgur.com/X8OxMue.gif)
 

@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-TARGET_GEAR_CHANGED item 
+TARGET_GEAR_CHANGED    item 
+
+item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
+
 ```
 
 ## Examples
@@ -23,10 +26,10 @@ TARGET_GEAR_CHANGED *wand*,*staff*
 
 ## Notes
 
-- To find itemIDs, you can use kittykeys event logger or dev tools
+- To find itemIDs, you can use kittykeys debug tab or dev tools
 - To use this trigger, you must have active target selected
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/946biD2.mp4)
 

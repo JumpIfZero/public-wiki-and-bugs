@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-RUNSCRIPT scriptName [scriptAmount] 
+RUNSCRIPT    scriptName [scriptAmount] 
+
+scriptName - Existing script name, case sensitive exact match
+scriptAmount - Number of script instances to launch
+
 ```
 
 ## Examples
@@ -28,5 +32,5 @@ RUNSCRIPT makePotion 9
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/3sA7U3f.gif)
 

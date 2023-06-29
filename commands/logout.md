@@ -11,7 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-LOGOUT 
+LOGOUT    
+
+
 ```
 
 ## Examples
@@ -25,5 +27,5 @@ LOGOUT
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/in599o7.gif)
 

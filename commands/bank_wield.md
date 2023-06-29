@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-BANK_WIELD item 
+BANK_WIELD    item 
+
+item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
+
 ```
 
 ## Examples
@@ -24,7 +27,8 @@ BANK_WIELD *ancestral*
 
 ## Notes
 
-- To find itemIDs, you can use kittykeys event logger or dev tools
+- Wildcards are supported with this command
+- To find itemIDs, you can use kittykeys debug tab or dev tools
 
 ## Demos
 

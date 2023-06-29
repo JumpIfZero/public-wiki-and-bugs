@@ -11,7 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-TICK 
+TICK    
+
+
 ```
 
 ## Examples

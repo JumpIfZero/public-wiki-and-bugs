@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-OBJECT object [menuaction] 
+OBJECT    object [menuaction] 
+
+object - ObjectName1/ObjectID1,ObjectName2/ObjectID2, ..., ObjectNameN/ObjectIDN
+menuaction - MenuActionID - leaving menuaction out will default to GAME_OBJECT_FIRST_OPTION (3)
+
 ```
 
 ## Examples
@@ -25,11 +29,12 @@ OBJECT bank_booth 4
 
 ## Notes
 
-- To find objectIDs, you can use kittykeys event logger or dev tools
+- Wildcards are supported with this command
+- To find objectIDs, you can use kittykeys debug tab or dev tools
 - To find menuaction, you can use kittykeys click logger
 - Objects include game objects, wall objects, ground objects and decorative objects
 
 ## Demos
 
-![](https://i.imgur.com/8G9ThTe.gif)
+![](https://i.imgur.com/RU94ucG.mp4)
 

@@ -1,6 +1,6 @@
 ---
 title: ABORT_ALL
-description: Aborts all running and queued scripts, only this script will continue
+description: Attempts to abort all running and queued scripts
 parent: Commands
 ---
 
@@ -11,7 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ABORT_ALL 
+ABORT_ALL    
+
+
 ```
 
 ## Examples
@@ -23,9 +25,9 @@ ABORT_ALL
 ## Notes
 
 {: .warning }
-Aborting running scripts may have undetermined behavior. Some scripts may run till completion, while others may stop instantly
+Aborting running scripts may have undetermined behavior. Some scripts may run till completion, while others may stop instantly. Using this command should be avoided.
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/3dhFV0t.gif)
 

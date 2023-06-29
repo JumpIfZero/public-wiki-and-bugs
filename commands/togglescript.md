@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-TOGGLESCRIPT scriptName [toggleMode] 
+TOGGLESCRIPT    scriptName [clickMode] 
+
+scriptName - Existing script name, case sensitive exact match
+clickMode - 0 = OFF, 1 = ON, leaving clickMode out will always click
+
 ```
 
 ## Examples
@@ -26,5 +30,5 @@ TOGGLESCRIPT MagePhase 1
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/c62ZD0Q.gif)
 

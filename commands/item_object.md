@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ITEM_OBJECT item object 
+ITEM_OBJECT    item object 
+
+item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
+object - ObjectName1/ObjectID1,ObjectName2/ObjectID2, ..., ObjectNameN/ObjectIDN
+
 ```
 
 ## Examples
@@ -24,8 +28,9 @@ ITEM_OBJECT 22124 61
 
 ## Notes
 
-- To find itemIDs, you can use kittykeys event logger or dev tools
-- To find objectIDs, you can use kittykeys event logger or dev tools
+- Wildcards are supported with this command
+- To find itemIDs, you can use kittykeys debug tab or dev tools
+- To find objectIDs, you can use kittykeys debug tab or dev tools
 
 ## Demos
 

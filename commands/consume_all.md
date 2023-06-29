@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-CONSUME_ALL item [id] 
+CONSUME_ALL    item [id] 
+
+item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
+id - Identifier / menu item to click
+
 ```
 
 ## Examples
@@ -24,8 +28,9 @@ CONSUME_ALL *logs* 7
 
 ## Notes
 
-- To find itemIDs, you can use kittykeys event logger or dev tools
-- To find id, you can use kittykeys click logger - do not shift click items
+- Wildcards are supported with this command
+- To find itemIDs, you can use kittykeys debug tab or dev tools
+- To find identifier, you can use kittykeys click logger - do not shift click items
 
 ## Demos
 

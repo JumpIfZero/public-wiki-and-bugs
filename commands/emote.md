@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-EMOTE emote 
+EMOTE    emote 
+
+emote - Full name of the emote, as seen at ingame menu
+
 ```
 
 ## Examples

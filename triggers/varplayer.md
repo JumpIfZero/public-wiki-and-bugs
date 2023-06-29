@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-VARPLAYER varplayerID value 
+VARPLAYER    varplayerID value 
+
+varplayerID - varplayer number
+value - Minimum value to consider valid for this trigger
+
 ```
 
 ## Examples
@@ -22,9 +26,9 @@ VARPLAYER 102 1
 
 ## Notes
 
-- To find varplayerIDs, you can use kittykeys event logger or dev tools var inspector
+- To find varplayerIDs, you can use kittykeys debug tab or dev tools var inspector
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/ieiK5Se.gif)
 

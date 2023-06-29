@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-SPELL_ [target] 
+SPELL_    [target] 
+
+target - ItemName/ItemID/ObjectName/ObjectID or 1 = Enable left click casting
+
 ```
 
 ## Examples

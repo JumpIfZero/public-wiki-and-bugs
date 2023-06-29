@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-SOUND_EFFECT soundID 
+SOUND_EFFECT    soundID 
+
+soundID - soundID1,soundID2, ..., soundIDN
+
 ```
 
 ## Examples
@@ -28,5 +31,5 @@ You will need to have effect sounds at minimum of 1% volume to get sound trigger
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/iyf8Jmh.gif)
 

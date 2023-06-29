@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PROJECTILE projectileID 
+PROJECTILE    projectileID 
+
+projectileID - ProjectileID1,ProjectileID2, ..., ProjectileIDN
+
 ```
 
 ## Examples
@@ -23,7 +26,7 @@ PROJECTILE 2948,2949,2950
 
 ## Notes
 
-- To find projectileIDs, you can use kittykeys event logger or dev tools
+- To find projectileIDs, you can use kittykeys debug tab or dev tools
 
 ## Demos
 

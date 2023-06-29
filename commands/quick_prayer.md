@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-QUICK_PRAYER [clickMode] 
+QUICK_PRAYER    [clickMode] 
+
+clickMode - 0 = OFF, 1 = ON, leaving clickMode out will always click
+
 ```
 
 ## Examples

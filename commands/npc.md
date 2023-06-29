@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-NPC npc [menuaction] 
+NPC    npc [menuaction] 
+
+npc - NpcID1/NpcName1,NpcID2/NpcName2, ..., NpcIDN/NpcNameN
+menuaction - MenuActionID - leaving menuaction out will default to NPC_SECOND_OPTION (10)
+
 ```
 
 ## Examples
@@ -25,10 +29,11 @@ NPC 7730 9
 
 ## Notes
 
-- To find npcIDs, you can use kittykeys event logger or dev tools
+- Wildcards are supported with this command
+- To find npcIDs, you can use kittykeys debug tab or dev tools
 - To find menuaction, you can use kittykeys click logger
 
 ## Demos
 
-![](https://i.imgur.com/8G9ThTe.gif)
+![](https://i.imgur.com/pd5Dc18.mp4)
 

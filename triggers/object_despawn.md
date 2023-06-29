@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-OBJECT_DESPAWN object 
+OBJECT_DESPAWN    object 
+
+object - ObjectName1/ObjectID1,ObjectName2/ObjectID2, ..., ObjectNameN/ObjectIDN
+
 ```
 
 ## Examples
@@ -23,10 +26,10 @@ OBJECT_DESPAWN bank_booth
 
 ## Notes
 
-- To find objectIDs, you can use kittykeys event logger or dev tools
+- To find objectIDs, you can use kittykeys debug tab or dev tools
 - Objects include game objects, wall objects, ground objects and decorative objects
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/MrMXQwx.gif)
 

@@ -11,7 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-INVENTORY_EMPTY 
+INVENTORY_EMPTY    
+
+
 ```
 
 ## Examples
@@ -25,5 +27,5 @@ INVENTORY_EMPTY
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/QAOmvKa.gif)
 

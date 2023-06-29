@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-INVENTORY_DOES_NOT_CONTAIN item 
+INVENTORY_DOES_NOT_CONTAIN    item 
+
+item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
+
 ```
 
 ## Examples
@@ -22,9 +25,9 @@ INVENTORY_DOES_NOT_CONTAIN 20425
 
 ## Notes
 
-- To find itemIDs, you can use kittykeys event logger or dev tools
+- To find itemIDs, you can use kittykeys debug tab or dev tools
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/ZS1sqan.gif)
 

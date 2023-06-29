@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-GRAPHIC_SELF graphicID 
+GRAPHIC_SELF    graphicID 
+
+graphicID - graphicID1,graphicID2, ..., graphicIDN
+
 ```
 
 ## Examples
@@ -23,7 +26,7 @@ GRAPHIC_SELF 345,597
 
 ## Notes
 
-- To find graphicIDs, you can use kittykeys event logger or dev tools
+- To find graphicIDs, you can use kittykeys debug tab or dev tools
 
 ## Demos
 

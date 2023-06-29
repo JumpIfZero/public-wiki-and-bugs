@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-HITSPLAT_SELF [value] 
+HITSPLAT_SELF    [value] 
+
+value - Minimum hitsplat value
+
 ```
 
 ## Examples
@@ -26,5 +29,5 @@ HITSPLAT_SELF 20
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/IHZRLH3.gif)
 

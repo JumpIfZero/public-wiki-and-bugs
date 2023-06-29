@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-GRAPHIC_TARGET graphicID 
+GRAPHIC_TARGET    graphicID 
+
+graphicID - graphicID1,graphicID2, ..., graphicIDN
+
 ```
 
 ## Examples
@@ -23,10 +26,10 @@ GRAPHIC_TARGET 4025,694
 
 ## Notes
 
-- To find graphicIDs, you can use kittykeys event logger or dev tools
+- To find graphicIDs, you can use kittykeys debug tab or dev tools
 - To use this trigger, you must have active target selected
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/QcbQ7St.mp4)
 

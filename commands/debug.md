@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-DEBUG message 
+DEBUG    message 
+
+message - Message to add into game chat
+
 ```
 
 ## Examples
@@ -25,5 +28,5 @@ DEBUG JZ likes cats
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/w79p1yJ.gif)
 

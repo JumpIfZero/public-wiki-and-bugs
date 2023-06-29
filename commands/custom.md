@@ -11,7 +11,14 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-CUSTOM menuActionID identifier itemID param0 param1 
+CUSTOM    menuActionID identifier itemID param0 param1 
+
+menuActionID - Menuaction ID
+identifier - Identifier
+itemID - ItemID, -1 if not item action
+param0 - First parameter
+param1 - Second parameter
+
 ```
 
 ## Examples

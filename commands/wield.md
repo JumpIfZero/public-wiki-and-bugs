@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-WIELD item 
+WIELD    item 
+
+item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
+
 ```
 
 ## Examples
@@ -25,7 +28,8 @@ WIELD *wand*,*staff*
 
 ## Notes
 
-- To find itemIDs, you can use kittykeys event logger or dev tools
+- Wildcards are supported with this command
+- To find itemIDs, you can use kittykeys debug tab or dev tools
 
 ## Demos
 

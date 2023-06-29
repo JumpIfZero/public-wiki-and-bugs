@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ITEM_USE item1 item2 
+ITEM_USE    item1 item2 
+
+item1 - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
+item2 - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
+
 ```
 
 ## Examples
@@ -23,7 +27,8 @@ ITEM_USE 13421 6032
 
 ## Notes
 
-- To find itemIDs, you can use kittykeys event logger or dev tools
+- Wildcards are supported with this command
+- To find itemIDs, you can use kittykeys debug tab or dev tools
 
 ## Demos
 

@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-TYPE content 
+TYPE    content 
+
+content - Message to type
+
 ```
 
 ## Examples
@@ -25,5 +28,5 @@ TYPE I love cats how about you?
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/DBqOzLw.gif)
 

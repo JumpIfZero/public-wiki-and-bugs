@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-LOOT minValue [maxValue] 
+LOOT    minValue [maxValue] 
+
+minValue - Mimimum stack value
+maxValue - Maximum stack value
+
 ```
 
 ## Examples
@@ -26,5 +30,5 @@ LOOT 10000 20000
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/tDhyhno.mp4)
 

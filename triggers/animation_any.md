@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ANIMATION_ANY animationID 
+ANIMATION_ANY    animationID 
+
+animationID - AnimationID1,AnimationID2, ..., AnimationIDN
+
 ```
 
 ## Examples
@@ -23,7 +26,7 @@ ANIMATION_ANY 505,506
 
 ## Notes
 
-- To find animationIDs, you can use kittykeys event logger or dev tools
+- To find animationIDs, you can use kittykeys debug tab or dev tools
 
 ## Demos
 

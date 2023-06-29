@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-PLAYER_DESPAWN player 
+PLAYER_DESPAWN    player 
+
+player - Player name
+
 ```
 
 ## Examples
@@ -26,5 +29,5 @@ PLAYER_DESPAWN myMule123
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/IlYMD5W.mp4)
 

@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-SLEEP minMS [maxMS] 
+SLEEP    minMS [maxMS] 
+
+minMS - Minimum milliseconds to sleep for
+maxMS - Maximum milliseconds to sleep for - leaving maxMS out will sleep exactly for minMS
+
 ```
 
 ## Examples
@@ -26,5 +30,5 @@ SLEEP 50 100
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/DBqOzLw.gif)
 

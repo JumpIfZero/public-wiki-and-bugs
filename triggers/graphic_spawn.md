@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-GRAPHIC_SPAWN graphicsObject 
+GRAPHIC_SPAWN    graphicsObject 
+
+graphicsObject - GraphicsObjectName1/GraphicsObjectID1,GraphicsObjectName2/GraphicsObjectID2, ..., GraphicsObjectNameN/GraphicsObjectIDN
+
 ```
 
 ## Examples
@@ -23,7 +26,7 @@ GRAPHIC_SPAWN 1227,1228
 
 ## Notes
 
-- To find graphicsObjectIDs, you can use kittykeys event logger or dev tools
+- To find graphicsObjectIDs, you can use kittykeys debug tab or dev tools
 
 ## Demos
 

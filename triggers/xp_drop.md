@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-XP_DROP [skillName] minValue 
+XP_DROP    [skillName] minValue 
+
+skillName - Fully qualified skill name as seen ingame
+minValue - Minimum value to consider valid for this trigger
+
 ```
 
 ## Examples

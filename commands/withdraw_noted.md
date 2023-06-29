@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-WITHDRAW_NOTED item [quantity] 
+WITHDRAW_NOTED    item [quantity] 
+
+item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
+quantity - Leaving quantity out will withdraw all as note
+
 ```
 
 ## Examples
@@ -23,9 +27,10 @@ WITHDRAW_NOTED 1779
 
 ## Notes
 
-- To find itemIDs, you can use kittykeys event logger or dev tools
+- Wildcards are supported with this command
+- To find itemIDs, you can use kittykeys debug tab or dev tools
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/c2KispC.gif)
 

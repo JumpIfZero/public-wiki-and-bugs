@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ENERGY maxLevel [minLevel] 
+ENERGY    maxLevel [minLevel] 
+
+maxLevel - Maximum level to consider valid for this trigger
+minLevel - Minimum level to consider valid for this trigger
+
 ```
 
 ## Examples
@@ -26,5 +30,5 @@ ENERGY 60 40
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/H33Z5rV.mp4)
 

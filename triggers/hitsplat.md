@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-HITSPLAT [value] 
+HITSPLAT    [value] 
+
+value - Minimum hitsplat value
+
 ```
 
 ## Examples

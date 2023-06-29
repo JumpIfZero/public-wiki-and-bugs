@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-TOGGLEGROUP groupName newStatus 
+TOGGLEGROUP    groupName newStatus 
+
+groupName - Existing group name, case sensitive exact match
+newStatus - 0 = OFF, 1 = ON
+
 ```
 
 ## Examples
@@ -26,5 +30,5 @@ TOGGLEGROUP MagePhase 0
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/pHyDyn9.gif)
 

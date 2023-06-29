@@ -11,7 +11,9 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-TARGET_SET 
+TARGET_SET    
+
+
 ```
 
 ## Examples
@@ -27,5 +29,5 @@ This command needs to be used with npc or player spawn trigger
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/2USp9oo.mp4)
 

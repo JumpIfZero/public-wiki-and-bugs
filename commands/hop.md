@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-HOP worldID 
+HOP    worldID 
+
+worldID - World number to hop into
+
 ```
 
 ## Examples
@@ -26,5 +29,5 @@ HOP 330
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/ONx9Yzd.gif)
 

@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-NPC_DESPAWN npc 
+NPC_DESPAWN    npc 
+
+npc - NpcName1/NpcID1,NpcName2/NpcID2, ..., NpcNameN/NpcIDN
+
 ```
 
 ## Examples
@@ -27,5 +30,5 @@ NPC_DESPAWN 2790,2792
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/Cdswh4X.mp4)
 

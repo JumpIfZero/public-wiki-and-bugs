@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ITEM_SPAWN item 
+ITEM_SPAWN    item 
+
+item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
+
 ```
 
 ## Examples
@@ -23,7 +26,7 @@ ITEM_SPAWN 12819,12849,59286
 
 ## Notes
 
-- To find itemIDs, you can use kittykeys event logger or dev tools
+- To find itemIDs, you can use kittykeys debug tab or dev tools
 
 ## Demos
 

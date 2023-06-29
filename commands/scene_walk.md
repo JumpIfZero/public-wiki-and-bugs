@@ -11,7 +11,12 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-SCENE_WALK x y [accuracy] 
+SCENE_WALK    x y [accuracy] 
+
+x - World coordinate X
+y - World coordinate Y
+accuracy - Determines how accurately this world point should be clicked - unit is tiles, higher number means less accurate
+
 ```
 
 ## Examples
@@ -26,5 +31,5 @@ SCENE_WALK 3216 3416 3
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/ceNFYk6.mp4)
 

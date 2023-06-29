@@ -11,7 +11,11 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-LOGIN username password 
+LOGIN    username password 
+
+username - Username to enter
+password - Password to enter
+
 ```
 
 ## Examples
@@ -22,9 +26,9 @@ LOGIN jzmain ilovecats
 
 ## Notes
 
-- OTP (2FA) is not yet supported
+- OTP (2FA) is not supported
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/gSOUBX3.mp4)
 

@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ANIMATION_TARGET animationID 
+ANIMATION_TARGET    animationID 
+
+animationID - AnimationID1,AnimationID2, ..., AnimationIDN
+
 ```
 
 ## Examples
@@ -23,10 +26,10 @@ ANIMATION_TARGET 705,599
 
 ## Notes
 
-- To find animationIDs, you can use kittykeys event logger or dev tools
+- To find animationIDs, you can use kittykeys debug tab or dev tools
 - To use this trigger, you must have active target selected
 
 ## Demos
 
-![](N/A)
+![](https://i.imgur.com/AhuOhIs.mp4)
 
