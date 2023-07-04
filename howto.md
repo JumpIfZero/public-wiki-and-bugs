@@ -11,7 +11,7 @@ KittyKeys comes with a list of Commands and Triggers you can find in this docume
 * [Commands](https://docs.jzplugins.com/commands)
 * [Triggers](https://docs.jzplugins.com/triggers)
 
-Every page has explanation of the instruction, short description, syntax, examples and usually - and important note about the instruction. It is highly advised to read and study these documents before asking more questions.
+Every page has explanation of the instruction, short description, syntax, examples and usually - important note about the instruction. It is highly advised to read and study these documents before asking more questions.
 
 The 🔥-kittykeys-scripts channel in discord is a channel, where other customers share their scripts. The channel has a searchbar and tags to make it easier to navigate.
 
@@ -50,7 +50,8 @@ Auto scripts work by listening to game event, called trigger. When the trigger h
 Simple auto script would be for example:
 ![Auto script](https://i.imgur.com/1OxKz25.png)
 
-* Trigger: XP_DROP MAGIC 100 (Simulate a 20+ hit of lets say fire surge)
+Simulate a 20+ hit of lets say fire surge
+Trigger: XP_DROP MAGIC 100
 
 When the Trigger is met (100xp drop in magic)
 * Equip Armadyl Godsword
@@ -78,28 +79,21 @@ Developer tools can be found on your side bar, where your other plugins are. If 
 
 Developer tools is a plugin that shows wide variety of different overlays which help you make your scripts.
 For example turning on "Game objects" on Developer Tools
+
 ![Game objects](https://i.imgur.com/DRE1uzD.png)
-make your screen look like this
+
+makes your screen look like this
 
 ![Objects overlay](https://i.imgur.com/510FbEF.png)
 
-With the help that tool you can find ObjectIDs quite fast.
-Using this information as an example, we could for example make automatic script that logs you out. Trigger on OBJECT_SPAWN 29715 (the bush in Lumbridge) => IDLE 600 (600 milliseconds) => Logout
+With the help that tool you can find ObjectIDs quite fast. Using this information as an example, we could for example make automatic script that logs you out. Trigger on `OBJECT_SPAWN 29715` (the bush in Lumbridge) => `IDLE 600` (600 milliseconds) => `LOGOUT`
 
 ![Result script](https://i.imgur.com/Duc33Hn.png)
 
-Kittykeys also contains integrated debug tab to help you develop scripts even faster. Debug tab has two sections -  "General" and "Events". Sometimes it is needed to get the exact click of something or to understand what each click does. An example for that would be 1 ticking Karambwans at Myths Guild bank.
+Kittykeys also contains integrated debug tab to help you develop scripts even faster. Debug tab has two sections - "General" and "Events". Sometimes it is needed to get the exact click of something or to understand what each click does. An example for that would be 1 ticking Karambwans at Myths Guild bank.
 Navigate to debug tab, click on general and then tick "Send clicks to chat".
 
-Now use your karambwan on the range - you will see something like
-`CUSTOM 25 0 3142 0 9764864`
-in your game chatbox.
-
-Number 25 is MenuActionID that represents clicking on widget that has target
-Number 0 in this case is "Use"
-Number 3142 is itemID for raw karambwan
-Number 0 second time means the position in the inventory. There are 28 inventory slots, where first slot is 0. Last slot is 27.
-Number 9764864 stands for WidgetID for inventory container.
+Now use your karambwan on the range - you will see something like `CUSTOM 25 0 3142 0 9764864` in your game chatbox. First number 25 is MenuActionID that represents clicking on widget that has target. Number 0 in this case is "Use". Number 3142 is itemID for raw karambwan. Number 0 second time means the position of the item in your inventory. There are 28 inventory slots, where first slot is 0 and last slot is 27. Number 9764864 stands for WidgetID for inventory container.
 
 The "Events" part contains mostly the same things as Developer tools, however it has some extra options and is way easier to use.
 An example for getting data through the debug tab would be "ANIMATION_SELF" and making Armadyl godsword into Granite maul special attack.
@@ -122,6 +116,7 @@ This hotkey has a trigger inside the script, which means it will wait for animat
 Making a script with KittyKeys is not as hard as it seems, once you understand how to use the given tools. When making a script, think about how you would do it manually by hand. In this example we build an auto script to create platebodys at Varrock west bank anvil. Use the debug tab and developer tools as your help source.
 
 Explanation of flow before you start making the script:
+
 In a normal run of creating platebodies at Varrock west bank anvil you would open bank, withdraw bars, click on anvil, click on the option of creating platebodies, wait till all the bars are done, click on bank, deposit inventory and repeat the entire process over and over again.
 
 * To find the bank booth ObjectID you want to use the game objects on the developer tools
