@@ -6,11 +6,6 @@ has_children: true
 has_toc: true
 ---
 
-{: .highlight-title }
-> Hey, Listen!
->
-> This wiki is not complete (yet). Please refer to the **Help** tab in the Kittykeys Editor, or to the JZ Plugins Discord server, for the most up-to-date information.
-
 # Triggers in Kittykeys
 
 Triggers are the heart of automatic scripts. Using triggers, a series of commands can run automatically after some event happens in-game.

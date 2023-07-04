@@ -9,6 +9,8 @@ permalink: /about
 
 Kittykeys is a programmable, fully customizable plugin that implements event-driven architecture. A producer creates an event that is caused by change or update, that triggers routing which finally leads to consumer to take action. This means that you can run set of commands when you press a hotkey or automate it to happen when something happens in-game.
 
+KittyKeys simply put is a tool where YOU can make almost anything possible YOURSELF. KittyKeys by default does not contain any scripts, however there are premade scripts for variety of types in 🔥-kittykeys-scripts channel in my discord.
+
 # Features
 
 - Configurable click locations (random/constant)

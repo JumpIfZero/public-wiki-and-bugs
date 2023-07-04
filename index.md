@@ -1,8 +1,7 @@
 ---
 
 
-This documentation explains how to use the Kittykeys plugin by JZ#4216.
+Official plugin documentation for JZ plugins
 
-{: .warning }
-This wiki is not complete (yet). Please refer to the Kittykeys editor's **Help** tab, or to the JZ plugin discord, for the most up-to-date information.
-
+{: .highlight-title }
+This wiki is not complete. If something is wrong or missing, please reach out to me.
