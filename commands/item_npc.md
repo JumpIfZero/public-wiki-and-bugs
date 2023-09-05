@@ -1,6 +1,6 @@
 ---
 title: ITEM_NPC
-description: Uses item on your NPC target
+description: Uses item on nearest NPC match
 parent: Commands
 ---
 
@@ -11,16 +11,17 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ITEM_NPC item 
+ITEM_NPC item npc 
 
 item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
+npc - NpcID1/NpcName1,NpcID2/NpcName2, ..., NpcIDN/NpcNameN
 ```
 
 ## Examples
 
 ```java
-ITEM_NPC iron_bar
-ITEM_NPC 536
+ITEM_NPC iron_bar banker
+ITEM_NPC 536 1614
 ```
 
 ## Notes
