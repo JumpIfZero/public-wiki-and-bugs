@@ -1,6 +1,6 @@
 ---
 title: RUNSCRIPT
-description: Runs script content by script name
+description: Runs script content by script name. Script is run to completion, this script will continue after.
 parent: Commands
 ---
 
@@ -28,6 +28,7 @@ RUNSCRIPT makePotion 9
 ## Notes
 
 - Script that is being triggered does not need to be enabled
+- See command ABORT_DISABLED for more advanced use
 
 ## Demos
 

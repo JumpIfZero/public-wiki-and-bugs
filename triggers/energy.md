@@ -1,6 +1,6 @@
 ---
 title: ENERGY
-description: Triggers when run energy is dropped below level target
+description: Triggers when run energy is at level target
 parent: Triggers
 ---
 
@@ -11,17 +11,16 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-ENERGY maxLevel [minLevel] 
+ENERGY level 
 
-maxLevel - Maximum level to consider valid for this trigger
-minLevel - Minimum level to consider valid for this trigger
+level - Level to consider valid for this trigger
 ```
 
 ## Examples
 
 ```java
-ENERGY 50
-ENERGY 60 40
+ENERGY <50
+ENERGY >=10
 ```
 
 ## Notes

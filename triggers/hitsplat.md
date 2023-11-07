@@ -13,7 +13,7 @@ _{{ page.description }}_
 ```java
 HITSPLAT [value] 
 
-value - Minimum hitsplat value
+value - Hitsplat value
 ```
 
 ## Examples

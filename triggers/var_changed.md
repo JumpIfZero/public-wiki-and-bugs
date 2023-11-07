@@ -21,6 +21,8 @@ value - Value to check for, can be negative
 
 ```java
 VAR_CHANGED myVar 50
+VAR_CHANGED myVar >=0
+VAR_CHANGED myVar !=10
 VAR_CHANGED myVar -20
 ```
 

@@ -11,10 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-XP_DROP [skillName] minValue 
+XP_DROP [skillName] value 
 
 skillName - Fully qualified skill name as seen ingame
-minValue - Minimum value to consider valid for this trigger
+value - Value to consider valid for this trigger
 ```
 
 ## Examples
@@ -22,7 +22,7 @@ minValue - Minimum value to consider valid for this trigger
 ```java
 XP_DROP MAGIC 100
 XP_DROP 1
-XP_DROP STRENGTH 200
+XP_DROP STRENGTH >200
 ```
 
 ## Notes

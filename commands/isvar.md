@@ -14,7 +14,7 @@ _{{ page.description }}_
 ISVAR varName value 
 
 varName - Your variable name with exact name match
-value - Value to check for, can be negative
+value - Value to check for
 ```
 
 ## Examples
@@ -22,6 +22,8 @@ value - Value to check for, can be negative
 ```java
 ISVAR myVar 10
 ISVAR myVar -5
+ISVAR myVar logs
+ISVAR myVar myMuleRSN
 ```
 
 ## Notes

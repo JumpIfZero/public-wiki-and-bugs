@@ -22,6 +22,8 @@ newValue - New exact value for your variable
 ```java
 SETVAR myVar 5
 SETVAR myVar 2000
+SETVAR myVar *logs
+SETVAR myVar MyMUleRSN
 ```
 
 ## Notes
