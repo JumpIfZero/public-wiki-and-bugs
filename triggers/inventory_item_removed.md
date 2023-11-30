@@ -1,6 +1,6 @@
 ---
-title: INVENTORY_DOES_NOT_CONTAIN
-description: Triggers when your inventory updates with this item (does not have item)
+title: INVENTORY_ITEM_REMOVED
+description: Triggers when your inventory loses any of this item
 parent: Triggers
 ---
 
@@ -11,7 +11,7 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-INVENTORY_DOES_NOT_CONTAIN item 
+INVENTORY_ITEM_REMOVED item 
 
 item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
 ```
@@ -19,7 +19,7 @@ item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
 ## Examples
 
 ```java
-INVENTORY_DOES_NOT_CONTAIN 20425
+INVENTORY_ITEM_REMOVED 20425
 ```
 
 ## Notes

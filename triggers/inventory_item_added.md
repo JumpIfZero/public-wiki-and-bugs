@@ -1,6 +1,6 @@
 ---
-title: INVENTORY_CONTAINS
-description: Triggers when your inventory updates with this item (has item)
+title: INVENTORY_ITEM_ADDED
+description: Triggers when your inventory receives any of this item
 parent: Triggers
 ---
 
@@ -11,7 +11,7 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-INVENTORY_CONTAINS item 
+INVENTORY_ITEM_ADDED item 
 
 item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
 ```
@@ -19,7 +19,7 @@ item - ItemName1/ItemID1,ItemName2/ItemID2, ..., ItemNameN/ItemIDN
 ## Examples
 
 ```java
-INVENTORY_CONTAINS 20425
+INVENTORY_ITEM_ADDED 20425
 ```
 
 ## Notes

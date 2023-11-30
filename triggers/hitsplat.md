@@ -26,6 +26,7 @@ HITSPLAT 20
 ## Notes
 
 - To use this trigger, you must have active target selected
+- Hitsplat amount is available in variable $HITSPLAT
 
 ## Demos
 

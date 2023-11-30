@@ -25,6 +25,7 @@ HITSPLAT_SELF 20
 
 ## Notes
 
+- Hitsplat amount is available in variable $HITSPLAT_SELF
 
 ## Demos
 

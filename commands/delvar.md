@@ -13,13 +13,14 @@ _{{ page.description }}_
 ```java
 DELVAR varName 
 
-varName - Your variable name with exact name match
+varName - Your variable name with exact name match. Using  deletes all.
 ```
 
 ## Examples
 
 ```java
 DELVAR myVar
+DELVAR *
 ```
 
 ## Notes
