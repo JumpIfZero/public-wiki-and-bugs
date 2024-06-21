@@ -20,7 +20,7 @@ quantity - Leaving quantity out will deposit all
 ## Examples
 
 ```java
-DEPOSIT shark 5
+DEPOSIT shark,*brew* 5
 DEPOSIT coins
 ```
 

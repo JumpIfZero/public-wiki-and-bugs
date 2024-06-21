@@ -23,6 +23,7 @@ id - Identifier / menu item to click
 CONSUME_ALL grimy_irit_leaf
 CONSUME_ALL leaping_trout 7
 CONSUME_ALL *logs* 7
+CONSUME_ALL *logs* drop
 ```
 
 ## Notes

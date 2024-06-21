@@ -13,14 +13,14 @@ _{{ page.description }}_
 ```java
 MESSAGE type message 
 
-type - Message type ID, usually 4 (ENGINE) - @see <a href="https://github.com/runelite/runelite/blob/master/runelite-api/src/main/java/net/runelite/api/ChatMessageType.java">ChatMessageType</a>
+type - Message type ID, usually 0 (GAMEMESSAGE) - @see <a href="https://github.com/runelite/runelite/blob/master/runelite-api/src/main/java/net/runelite/api/ChatMessageType.java">ChatMessageType</a>
 message - Message to match for this trigger
 ```
 
 ## Examples
 
 ```java
-MESSAGE 4 nothing_interesting_happens.
+MESSAGE 0 nothing_interesting_happens.
 ```
 
 ## Notes

@@ -7,21 +7,19 @@ permalink: /about
 
 # What is Kittykeys?
 
-Kittykeys is a programmable, fully customizable plugin that implements event-driven architecture. A producer creates an event that is caused by change or update, that triggers routing which finally leads to consumer to take action. This means that you can run set of commands when you press a hotkey or automate it to happen when something happens in-game.
+Kittykeys is a programmable, fully customizable plugin that implements event-driven architecture. A producer creates an event that is caused by change or update, that triggers routing which finally leads to consumer to take action. This means that you can run set of commands when you press a hotkey (keyboard), click somewhere on your client (mouse) or automate it to happen when something happens in-game.
 
-KittyKeys simply put is a tool where YOU can make almost anything possible YOURSELF. KittyKeys by default does not contain any scripts, however there are premade scripts for variety of types in 🔥-kittykeys-scripts channel in my discord.
+KittyKeys simply put is a tool where YOU can make almost anything possible YOURSELF. KittyKeys by default does not "contain" any scripts, however there are premade scripts for variety of types shared by other customers in SDN (Script Delivery Network) inside the plugin. Using them is simple - browse, pick the one you like, install and start using it.
 
 # Features
 
-- Configurable click locations (random/constant)
+- Configurable click locations (random/mouse/constant/noclick)
 - Configurable delays (random/instant)
-- Option to turn mouse clicks off
 - Option to allow multiple scripts to run at same time
 - Option to queue any pending scripts that may try to run while another is already running
 - Option to force stop all running scripts
 - Option to block hotkeys from chat
-- Option to disable timeouts when using trigger (event) inside command
-- Tab autocompletion for command and trigger names.
+- Tab autocompletion for command and trigger names
 
 Miscellaneous features:
 - Permanent special attack bar

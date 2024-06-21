@@ -21,6 +21,8 @@ menuaction - MenuActionID - leaving menuaction out will default to NPC_SECOND_OP
 ```java
 TARGET
 TARGET 11
+TARGET attack
+TARGET talk-to
 ```
 
 ## Notes

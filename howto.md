@@ -13,11 +13,11 @@ KittyKeys comes with a list of Commands and Triggers you can find in this docume
 
 Every page has explanation of the instruction, short description, syntax, examples and usually - important note about the instruction. It is highly advised to read and study these documents before asking more questions.
 
-The 🔥-kittykeys-scripts channel in discord is a channel, where other customers share their scripts. The channel has a searchbar and tags to make it easier to navigate.
+Inside your KittyKeys plugin, you can find SDN (Script Delivery Network), where other customers share their scripts. The SDN main view also has a search bar so you can find your favourite scripts by using keywords.
 
-![Scripts channel](https://i.imgur.com/dfv0dvf.png)
+These can be imported into your client by right clicking and hitting install. Usually the scripts also have instructions how to use the script. Follow the instructions given by the original uploader to make sure the script works as intended.
 
-These can be imported into your client by copying the ENTIRE script from [ to ] and clicking the import button on kittykeys scripts tab. Usually the scripts posted in channel has also instructions how to use the script. Follow the instructions given by the original poster to make sure the script works as intended.
+Once you're more skilled with KittyKeys, you can also right click upload your script groups to SDN to make it available for others.
 
 * How to get started
 * What are different script types

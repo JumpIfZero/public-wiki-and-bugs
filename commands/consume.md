@@ -23,6 +23,7 @@ id - Identifier / menu item to click
 CONSUME shark,*brew*,*karam*
 CONSUME 385
 CONSUME 229 7
+CONSUME monkfish eat
 ```
 
 ## Notes

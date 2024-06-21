@@ -24,6 +24,8 @@ OBJECT bank_chest
 OBJECT *tree
 OBJECT 1235,5674
 OBJECT bank_booth 4
+OBJECT tree chop
+OBJECT bank_booth collect
 ```
 
 ## Notes

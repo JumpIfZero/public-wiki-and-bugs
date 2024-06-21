@@ -24,6 +24,8 @@ NPC goblin
 NPC fishing_spot
 NPC perdu 11
 NPC 7730 9
+NPC goblin attack
+NPC man pickpocket
 ```
 
 ## Notes

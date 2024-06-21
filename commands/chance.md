@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-CHANCE 
+CHANCE value [script] 
+
+value - Your % value to match for
+script - Your command to run on success
 ```
 
 ## Examples
@@ -19,6 +22,7 @@ CHANCE
 ```java
 CHANCE 2
 CHANCE 95
+CHANCE 95 TYPE sit
 ```
 
 ## Notes

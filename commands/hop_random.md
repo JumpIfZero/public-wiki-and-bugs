@@ -11,9 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-HOP_RANDOM subscriptionType 
+HOP_RANDOM subscriptionType [worldLocation] 
 
 subscriptionType - 0 = F2P only, 1 = P2P only
+worldLocation - 0 = USA, 1 = UK, 3 = AUS, 7 = GER
 ```
 
 ## Examples
@@ -21,6 +22,7 @@ subscriptionType - 0 = F2P only, 1 = P2P only
 ```java
 HOP_RANDOM 1
 HOP_RANDOM 0
+HOP_RANDOM 1 7
 ```
 
 ## Notes

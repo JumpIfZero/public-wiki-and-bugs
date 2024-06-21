@@ -21,7 +21,9 @@ menuaction - MenuActionID - leaving menuaction out will default to PLAYER_SECOND
 
 ```java
 PLAYER zezima
-PLAYER mule* 47
+PLAYER mule* trade
+PLAYER enemy123 45
+PLAYER enemy123 attack
 ```
 
 ## Notes

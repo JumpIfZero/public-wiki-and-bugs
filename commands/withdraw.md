@@ -21,6 +21,7 @@ quantity - Leaving quantity out will withdraw all
 
 ```java
 WITHDRAW shark 5
+WITHDRAW chisel,hammer 2
 WITHDRAW coins
 ```
 
