@@ -15,6 +15,16 @@ Navigates to specific location using Paisti webwalker
   → DEBUG pwebwalk x y z
 ```
 
+```
+Navigates to nearest bank using Paisti webwalker
+  → DEBUG pwebwalk bank
+```
+
+```
+Navigates to next quest helper tile using Paisti webwalker
+  → DEBUG pwebwalk questhelper
+```
+
 ## Cuell (RLPL) webwalker integration
 ```
 Navigates to specific location using RLPL webwalker
