@@ -10,6 +10,10 @@ permalink: /integration
 If you have bought plugins from other communities, some of them are available also via KittyKeys. This page explains what they are and how to use them, however rely to their own documentation for most up-to-date information.
 
 ## Paisti plugins webwalker integration
+
+{: .warning }
+You must have Paisti's webwalker and utils on and must have configured the plugin
+
 ```
 Navigates to specific location using Paisti webwalker
   → DEBUG pwebwalk x y z
@@ -26,6 +30,10 @@ Navigates to next quest helper tile using Paisti webwalker
 ```
 
 ## Cuell (RLPL) webwalker integration
+
+{: .warning }
+You must have RLPL webwalker and shared utils on and must have configured the plugin
+
 ```
 Navigates to specific location using RLPL webwalker
   → DEBUG CATWALK X Y Z
@@ -97,6 +105,19 @@ WOODCUTTING_GUID_BANK
 YANILLE_BANK
 VARLAMORE_BANK
 ```
+
+## Storm client explorer (webwalker) integration
+
+{: .warning }
+You must have Storm explorer turned on and must have configured the plugin
+
+```
+Navigates to specific location using Storm explorer
+  → DEBUG EXPLORER X Y Z
+```
+
+{: .highlight-title }
+You can use trigger `MESSAGE 101 FINISHED_EXPLORING` to wait until the catwalking has finished
 
 ## RLPL break handler integration
 
