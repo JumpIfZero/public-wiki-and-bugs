@@ -18,7 +18,7 @@ CHANGE_SETTING
 
 ```java
 CHANGE_SETTING maxinteraction 50
-CHANGE_SETTING preventParallel true
+CHANGE_SETTING preventParallel 1
 ```
 
 ## Notes
