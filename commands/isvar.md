@@ -1,6 +1,6 @@
 ---
 title: ISVAR
-description: Aborts the execution of this script if your variable does not match to given value
+description: Aborts the execution of this script if your variable does not match to given expression
 parent: Commands
 ---
 

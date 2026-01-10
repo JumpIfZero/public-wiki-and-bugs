@@ -11,7 +11,10 @@ _{{ page.description }}_
 ## Syntax
 
 ```java
-CHANGE_SETTING 
+CHANGE_SETTING settingName newValue 
+
+settingName - Setting name to change - exact match
+newValue - New value for setting
 ```
 
 ## Examples
