@@ -7,9 +7,11 @@ permalink: /howto
 
 # Welcome to KittyKeys
 
-KittyKeys comes with a list of Commands and Triggers you can find in this documentation site
+KittyKeys comes with a list of documentation you can find on this site:
 * [Commands](https://docs.jzplugins.com/commands)
 * [Triggers](https://docs.jzplugins.com/triggers)
+* [Script Types](https://docs.jzplugins.com/types)
+* [Exposed Variables](https://docs.jzplugins.com/exposed)
 
 Every page has explanation of the instruction, short description, syntax, examples and usually - important note about the instruction. It is highly advised to read and study these documents before asking more questions.
 
@@ -34,6 +36,8 @@ The clip below showcases the editor, which can be found by navigating to the Kit
 Hotkey scripts need a __keybind__ to function so do not forget to chose the keybind for example number 2. Clicking on the "Help" option it will open a documentation of every command and trigger, which is identical to this site. If you have any questions feel free to ask other users in customer chat channels.
 
 ## What are different script types
+
+For a complete overview of all script types and their features, see the [Script Types](https://docs.jzplugins.com/types) page.
 
 As the names suggest a hotkey script works by binding a script to a hotkey.
 
@@ -108,6 +112,9 @@ Commands:
 * TARGET 
 
 This hotkey has a trigger inside the script, which means it will wait for animation by ID 7644 (which is armadyl special attack animation), to make sure that the granite maul part is only ran after the godsword part has already ran so the script works as intended.
+
+{: .warning }
+Triggers can be used inside the commands box. When a trigger is used, the script engine waits until the trigger fires before proceeding to the next command (wait until condition is met).
 
 ![Animation script](https://i.imgur.com/T6oPy2S.png)
 

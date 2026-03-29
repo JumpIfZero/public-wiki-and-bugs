@@ -18,14 +18,14 @@ identifier - Identifier
 itemID - ItemID, -1 if not item action
 param0 - First parameter
 param1 - Second parameter
-worldview - World view, currently always -1
+worldview - World view (use 0 unless sailing)
 ```
 
 ## Examples
 
 ```java
 CUSTOM 57 1 -1 -1 10485787
-CUSTOM 57 1 -1 -1 10485787 -1
+CUSTOM 57 1 -1 -1 10485787 0
 ```
 
 ## Notes
