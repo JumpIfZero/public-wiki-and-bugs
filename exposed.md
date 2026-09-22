@@ -21,6 +21,7 @@ Kittykeys exposes various variables that can be used in your scripts. These vari
 | `$CURRENT_HITPOINTS` | Your current hitpoints value |
 | `$SPEC_ENERGY` | Current special attack energy percentage |
 | `$TARGET` | Current target entity name |
+| `$WORLD` | Current world number |
 | `$RSN` | Your RSN |
 | `$EMPTY_INV_SLOTS` | Number of empty inventory slots |
 
